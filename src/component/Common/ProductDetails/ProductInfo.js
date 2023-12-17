@@ -7,27 +7,39 @@ import user3 from '../../../assets/img/user/user3.png'
 const ReviewData = [
     {
         img: user1,
-        name: "Sara ",
+        name: "Sara Anela",
         date: "5 days ago",
         replay: "Replay",
         report: "Report",
-        para: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In the absence of gravitational pull, there is no metus scelerisque. Presently, wisdom manifests as a mass, with a convallis leading to essential pellentesque, and non-nisi egestas. Cras extreme ligula, showcasing a mighty say in the port. Vestibulum, with a diam sitting, embraces vehicular elements more than ever. Vivamus lives magnificently, basking in the equilibrium of justice and wisdom.`
+        para: `Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+        scelerisque Praesent sapien massa, convallis a pellentesque nec,
+        egestas non nisi. Cras ultricies ligula sed magna dictum porta.
+        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+        dui. Vivamus magna justo.`
     },
     {
         img: user2,
-        name: "Darshan",
+        name: "Sara Anela",
         date: "5 days ago",
         replay: "Replay",
         report: "Report",
-        para: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In the absence of gravitational pull, there is no metus scelerisque. Presently, wisdom manifests as a mass, with a convallis leading to essential pellentesque, and non-nisi egestas. Cras extreme ligula, showcasing a mighty say in the port. Vestibulum, with a diam sitting, embraces vehicular elements more than ever. Vivamus lives magnificently, basking in the equilibrium of justice and wisdom.`
+        para: `Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+        scelerisque Praesent sapien massa, convallis a pellentesque nec,
+        egestas non nisi. Cras ultricies ligula sed magna dictum porta.
+        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+        dui. Vivamus magna justo.`
     },
     {
         img: user3,
-        name: "Druva",
+        name: "Sara Anela",
         date: "5 days ago",
         replay: "Replay",
         report: "Report",
-        para: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In the absence of gravitational pull, there is no metus scelerisque. Presently, wisdom manifests as a mass, with a convallis leading to essential pellentesque, and non-nisi egestas. Cras extreme ligula, showcasing a mighty say in the port. Vestibulum, with a diam sitting, embraces vehicular elements more than ever. Vivamus lives magnificently, basking in the equilibrium of justice and wisdom..`
+        para: `Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+        scelerisque Praesent sapien massa, convallis a pellentesque nec,
+        egestas non nisi. Cras ultricies ligula sed magna dictum porta.
+        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+        dui. Vivamus magna justo.`
     },
 
 ]

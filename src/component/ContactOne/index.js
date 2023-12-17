@@ -36,11 +36,11 @@ const ContactArea = () => {
                                     <li className="address_location">
                                         <div className="contact_widget">
                                         <i className="fa fa-phone"></i>
-                                            <Link to="/">+91 7338541530 </Link>
+                                            <Link to="/">+91 875968079 </Link>
                                         </div>
                                         <div className="contact_widget">
                                         <i className="fa fa-mobile"></i>
-                                        <Link to="/">+91 7338541530</Link>
+                                        <Link to="/">+91 56796805567</Link>
                                         </div>
                                     </li>
                                     <li className="address_location">

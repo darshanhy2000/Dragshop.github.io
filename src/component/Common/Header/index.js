@@ -294,7 +294,7 @@ const Header = () => {
                         </div>
                         <address className="address">
                             <span>Address: bengaluru.</span>
-                            <span>Call Us:73338541530</span>
+                            <span>Call Us:38713047040</span>
                             <span>Email: demo@example.com</span>
                         </address>
                         <ul className="social-link">
@@ -331,7 +331,7 @@ const Header = () => {
                     <address className="address">
                         <img src={logoWhite} alt="logo" />
                         <span>Address: bengaluru.</span>
-                        <span>Call Us:73338541530</span>
+                        <span>Call Us:6136408744</span>
                         <span>Email: demo@example.com</span>
                     </address>
                     <ul className="social-link">

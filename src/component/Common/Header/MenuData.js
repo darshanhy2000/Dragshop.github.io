@@ -10,12 +10,7 @@ export const MenuData = [
             // {
             //     name: "Grocery",
             //     href: "/grocery"
-            // },
-            // {
-            //     name: "Electronics",
-            //     href: "/electronics"
-            // },
-            
+        // }
             
 
         ]
@@ -44,18 +39,12 @@ export const MenuData = [
                         name: "Shop Left Sidebar",
                         href: "/shop-left-bar"
                     },
-                    // {
-                    //     name: "Shop Right Sidebar",
-                    //     href: "/shop-right-bar"
-                    // },
+                
                     {
                         name: "Product Single",
                         href: "/product-details-one/1"
                     },
-                    // {
-                    //     name: "Product Single Two",
-                    //     href: "/product-details-two/1"
-                    // }
+                
                 ]
             },
             {
@@ -65,14 +54,6 @@ export const MenuData = [
                         name: "Cart View One",
                         href: "/cart"
                     },
-                    // {
-                    //     name: "Cart View Two",
-                    //     href: "/cartTwo"
-                    // },
-                    // {
-                    //     name: "Cart View Three",
-                    //     href: "/cartThree"
-                    // },
                     {
                         name: "Empty Cart",
                         href: "/empty-cart"

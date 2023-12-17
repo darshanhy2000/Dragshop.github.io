@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 import ProductInfo from './ProductInfo'
 import RelatedProduct from './RelatedProduct'
 import { Link } from 'react-router-dom'

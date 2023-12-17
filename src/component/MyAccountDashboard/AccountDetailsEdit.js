@@ -26,7 +26,7 @@ const routeChange = () => {
                             <img src={img1} alt="img" />
                             <div className="fixed_icon"><input type="file" /><i className="fa fa-camera"></i></div>
                         </div>
-                        <h4>Robert Downey JR. </h4>
+                        <h4>Darshan H Y. </h4>
                         <p>UX/UI Designer</p>
                     </div>
                 </div>

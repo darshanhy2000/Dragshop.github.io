@@ -24,7 +24,7 @@ const LoginArea = () => {
                     'or our <b>Shop</b> page',
             }).then((result) => {
                 if(result.isConfirmed) {
-                  history.push('/my-account')
+                  history.push('/#!')
                 } else {
                   // not clicked
                 }
@@ -38,7 +38,7 @@ const LoginArea = () => {
                 title: 'Login Sucessfull',
                 text: 'Welcome '+ name
             })
-            history.push("/my-account");
+            history.push("/#!");
         }
         
 
@@ -55,11 +55,11 @@ const LoginArea = () => {
                                 <form onSubmit={(e)=>{e.preventDefault();login()}}>
                                     <div className="default-form-box">
                                         <label>Username or email<span className="text-danger">*</span></label>
-                                        <input type="text" className="form-control" required defaultValue="jhondoe@gmail.com"/>
+                                        <input type="text" className="form-control" required defaultValue=""/>
                                     </div>
                                     <div className="default-form-box">
                                         <label>Passwords<span className="text-danger">*</span></label>
-                                        <input type="password" className="form-control" required defaultValue="jhondoe123" minLength="8"/>
+                                        <input type="password" className="form-control" required defaultValue="" minLength="8"/>
                                     </div>
                                     <div className="login_submit">
                                         <button className="theme-btn-one btn-black-overlay btn_md" type="submit">login</button>

@@ -98,19 +98,19 @@ const MyVerticallyCenteredModal = (props) => {
                                             <div className="modal_share_icons_one">
                                                 <h4>SHARE THIS PRODUCT</h4>
                                                 <div className="posted_icons_one">
-                                                    <FacebookShareButton url={"https://themeforest.net/item/andshop-ecommerce-react-js-template/33822003"} quote={"Best React.js ecommerce Templete"}>
+                                                    <FacebookShareButton url={"#1"} quote={"Best Products"}>
                                                         <FacebookIcon size={32} round />
                                                     </FacebookShareButton>
-                                                    <TwitterShareButton url={"https://themeforest.net/item/andshop-ecommerce-react-js-template/33822003"} title={"Best React.js ecommerce Templete"}>
+                                                    <TwitterShareButton url={"#2"} title={"Best Products"}>
                                                         <TwitterIcon size={32} round />
                                                     </TwitterShareButton>
-                                                    <LinkedinShareButton url={"https://themeforest.net/item/andshop-ecommerce-react-js-template/33822003"} title={"Best React.js ecommerce Templete"}>
+                                                    <LinkedinShareButton url={"#3"} title={"Best Products"}>
                                                         <LinkedinIcon size={32} round />
                                                     </LinkedinShareButton>
-                                                    <TelegramShareButton url={"https://themeforest.net/item/andshop-ecommerce-react-js-template/33822003"} title={"Best React.js ecommerce Templete"}>
+                                                    <TelegramShareButton url={"#4"} title={"Best Products"}>
                                                         <TelegramIcon size={32} round />
                                                     </TelegramShareButton>
-                                                    <WhatsappShareButton url={"https://themeforest.net/item/andshop-ecommerce-react-js-template/33822003"} title={"Best React.js ecommerce Templete"}>
+                                                    <WhatsappShareButton url={"#"} title={"Best Products"}>
                                                         <WhatsappIcon size={32} round />
                                                     </WhatsappShareButton>
                                                 </div>

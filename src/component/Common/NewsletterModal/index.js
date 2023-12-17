@@ -24,7 +24,7 @@ const NewsletterModal = (props) => {
                                             <div className="offer_modal_left">
                                                 <img src={logo} alt="logo" />
                                                 <h3>SUBSCRIBE TO NEWSLETTER</h3>
-                                                <p>Subscribe to the Shopaholix mailing list to receive updates
+                                                <p>Subscribe to the DragShop mailing list to receive updates
                                                     on new arrivals, special offers and our promotions.</p>
                                                 <form onSubmit={(e) => {e.preventDefault();props.stop();props.start()}}>
                                                     <div className="input-group mb-3">

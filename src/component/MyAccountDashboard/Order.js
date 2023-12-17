@@ -19,14 +19,14 @@ const Order = () => {
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>May 10, 2018</td>
+                                <td>May 10, 2023</td>
                                 <td><span className="badge badge-info">Completed</span></td>
                                 <td>₹25.00 for 1 item </td>
                                 <td><Link to="/order-success" className="view">view</Link></td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>May 10, 2018</td>
+                                <td>May 10, 2023</td>
                                 <td> <span className="badge badge-warning">Processing</span></td>
                                 <td>₹17.00 for 1 item </td>
                                 <td><Link to="/order-tracking" className="view">view</Link></td>

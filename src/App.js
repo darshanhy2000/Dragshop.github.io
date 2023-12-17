@@ -6,11 +6,13 @@ import pMinDelay from 'p-min-delay';
 
 // All Page Lazy Import
 // const Grocery = loadable(() => pMinDelay(import('./page/grocery'), 250), { fallback: <Loading /> });
+const Login = loadable(() => pMinDelay(import('./page/login'), 250), { fallback: <Loading /> });
 const ShopGrid = loadable(() => pMinDelay(import('./page/shop'), 250), { fallback: <Loading /> });
 const ShopTwo = loadable(() => pMinDelay(import('./page/shop/shop-two'), 250), { fallback: <Loading /> });
 const ShopList = loadable(() => pMinDelay(import('./page/shop/shop-list'), 250), { fallback: <Loading /> });
 const ShopLeftSideBar = loadable(() => pMinDelay(import('./page/shop/shop-left-sidebar'), 250), { fallback: <Loading /> });
 const ShopRightSideBar = loadable(() => pMinDelay(import('./page/shop/shop-right-sidebar'), 250), { fallback: <Loading /> });
+const ProductDetailsTwos = loadable(() => pMinDelay(import('./page/product/product-details-two'), 250), { fallback: <Loading /> });
 const ProductDetails = loadable(() => pMinDelay(import('./page/product/index'), 250), { fallback: <Loading /> });
 const Cart = loadable(() => pMinDelay(import('./page/cart/index'), 250), { fallback: <Loading /> });
 const EmptyCarts = loadable(() => pMinDelay(import('./page/cart/empty-cart'), 250), { fallback: <Loading /> });
@@ -43,7 +45,7 @@ const CustomerDownloads = loadable(() => pMinDelay(import('./page/my-account/cus
 const CustomerAddress = loadable(() => pMinDelay(import('./page/my-account/customer-address'), 250), { fallback: <Loading /> });
 const CustomerAccountDetails = loadable(() => pMinDelay(import('./page/my-account/customer-account-details'), 250), { fallback: <Loading /> });
 const AccountEdit = loadable(() => pMinDelay(import('./page/vendor/account-edit'), 250), { fallback: <Loading /> });
-const Login = loadable(() => pMinDelay(import('./page/login'), 250), { fallback: <Loading /> });
+
 const Register = loadable(() => pMinDelay(import('./page/register'), 250), { fallback: <Loading /> });
 const Error = loadable(() => pMinDelay(import('./page/error'), 250), { fallback: <Loading /> });
 const PrivacyPolicy = loadable(() => pMinDelay(import('./page/privacy-policy'), 250), { fallback: <Loading /> });
@@ -68,6 +70,7 @@ const App = () => {
             <Route path='/wishlist' exact component={WishLists} />
             <Route path='/order-success' exact component={OrderSuccesses} />
             <Route path='/product-details-one/:id' exact component={ProductDetails} />
+            <Route path='/product-details-two/:id' exact component={ProductDetailsTwos} />
             <Route path='/my-account' exact component={MyAccounts} />
             <Route path='/my-account/customer-order' exact component={CustomerOrder} />
             <Route path='/my-account/customer-download' exact component={CustomerDownloads} />

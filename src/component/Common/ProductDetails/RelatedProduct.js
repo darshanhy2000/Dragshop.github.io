@@ -8,7 +8,7 @@ const RelatedProduct = () => {
         <>
             <section id="related_product" className="pb-100">
                 <div className="container">
-                    <Heading heading="You Might Also Like" para="demo products" />
+                    <Heading heading="You Might Also Like" para="Loding" />
                     <div className="row">
                         {products.slice(0, 4).map((data, index) => (
                             <div className="col-lg-3 col-md-4 col-sm-6 col-12" key={index} >
