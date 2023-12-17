@@ -36,10 +36,11 @@ const ProductDetailsOne = () => {
 
     const [count, setCount] = useState(1)
 
-    const [img, setImg] = useState(product.img)
+    const [img, setImg] = useState(product ? product.img : '');
 
-    const incNum = () => {
-        setCount(count + 1)
+
+    function incNum() {
+        setCount(count + 1);
     }
     const decNum = () => {
         if (count > 1) {
@@ -145,7 +146,7 @@ const ProductDetailsOne = () => {
                         <div className="empaty_cart_area">
                             <img src={img} alt="img" />
                             <h2>PRODUCT NOT FOUND</h2>
-                            <h3>Sorry Mate... No Item Found according to Your query!</h3>
+                            <h3>Sorry... No Item Found according to Your query!</h3>
                             <Link to="/shop" className="btn btn-black-overlay btn_sm">Continue Shopping</Link>
                         </div>
                     </div>
