@@ -23,7 +23,7 @@ const Team = (props) => {
         <>
         <section id="team_area" className={`ptb-100 ${props.class}`} >
         <div className="container">
-            <Heading heading="Expert Team" para="This is our expert team members of AndShop" />
+            <Heading heading="Expert Team" para="This is our expert team members of DragShop" />
             <div className="row">
                 {TeamData.map((data, index)=>(
                     <div className="col-lg-3" key={index}>

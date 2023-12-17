@@ -1,8 +1,7 @@
-import React from 'react'
-// import Img
-import user1 from '../../assets/img/user/user3.png'
-import user2 from '../../assets/img/user/user1.png'
-import user3 from '../../assets/img/user/user2.png'
+import React from 'react';
+import user1 from '../../assets/img/user/user3.png';
+import user2 from '../../assets/img/user/user1.png';
+import user3 from '../../assets/img/user/user2.png';
 
 const SingleCommentArea = () => {
   return (
@@ -22,7 +21,7 @@ const SingleCommentArea = () => {
                   <div className="meta_data">
                     <h6><a href="#!">Alden Smith</a></h6>
                     <div className="comment-time">
-                      MARCH 5, 2018, 6:05 PM
+                      March 5, 2023, 6:05 PM
                     </div>
                   </div>
                   <div className="ml-auto">
@@ -32,7 +31,7 @@ const SingleCommentArea = () => {
                 <p>
                   We denounce with righteous indignation and dislike men
                   who are so beguiled and demoralized by the charms of
-                  pleasure of the moment, so blinded by desire that the
+                  pleasure of the moment, so blinded by desire that they
                   cannot foresee the pain and trouble that.
                 </p>
               </div>
@@ -48,7 +47,7 @@ const SingleCommentArea = () => {
                       <div className="meta_data">
                         <h6><a href="#!">Daisy Lana</a></h6>
                         <div className="comment-time">
-                          april 8, 2018, 5:15 PM
+                          April 8, 2023, 5:15 PM
                         </div>
                       </div>
                       <div className="ml-auto">
@@ -59,7 +58,7 @@ const SingleCommentArea = () => {
                       We denounce with righteous indignation and dislike
                       men who are so beguiled and demoralized by the
                       charms of pleasure of the moment, so blinded by
-                      desire that the cannot foresee the pain and
+                      desire that they cannot foresee the pain and
                       trouble that.
                     </p>
                   </div>
@@ -77,7 +76,7 @@ const SingleCommentArea = () => {
                   <div className="meta_data">
                     <h6><a href="#!">John Becker</a></h6>
                     <div className="comment-time">
-                      april 15, 2018, 10:30 PM
+                      April 15, 2023, 10:30 PM
                     </div>
                   </div>
                   <div className="ml-auto">
@@ -87,7 +86,7 @@ const SingleCommentArea = () => {
                 <p>
                   We denounce with righteous indignation and dislike men
                   who are so beguiled and demoralized by the charms of
-                  pleasure of the moment, so blinded by desire that the
+                  pleasure of the moment, so blinded by desire that they
                   cannot foresee the pain and trouble that.
                 </p>
               </div>
@@ -96,7 +95,7 @@ const SingleCommentArea = () => {
         </ul>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default SingleCommentArea
+export default SingleCommentArea;

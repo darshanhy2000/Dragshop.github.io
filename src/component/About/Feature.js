@@ -10,23 +10,22 @@ const FeatureData = [
     {
         img: img1,
         title: "Creative Always",
-        para: `Stay creative with Billey and the huge collection of premade elements, layouts &amp;
-        effects`
+        para: `Stay creative with Billey and explore the extensive collection of pre-made elements, layouts, and effects`
     },
     {
         img: img2,
         title: "Express Customization",
-        para: `Easy to install and configure the theme customization in a few clicks with Billey.`
+        para: `Easily install and configure theme customization in just a few clicks with Billey.`
     },
     {
         img: img3,
         title: "Premium Integrations",
-        para: `Integrated premium plugins in Billey is the secret weapon for your business to thrive.`
+        para: `Billey comes equipped with integrated premium plugins, serving as the secret weapon for your business to thrive.`
     },
     {
         img: img4,
         title: "Real-time Editing",
-        para: `Edit your work and preview the changes on the screen live with advanced page builder.`
+        para: `Edit your work and preview changes on the screen in real-time with the advanced page builder`
     }
 ]
 

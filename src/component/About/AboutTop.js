@@ -21,13 +21,13 @@ const AboutTop = () => {
                                 <p><strong>"DragShop</strong> is an multi-vendor B2C fast e-commerce company. The company mainly focuses on men,women and children wear, but it also offers
                                     other apparel, clothes, accessories, shoes, bags and other fashion items. <strong>DragShop</strong> mainly targets Europe, America, Australia, and the
                                     Middle East along with other consumer markets."</p>
-                                <p>The brand was founded in October 2021, and since then it has upheld the
+                                <p>The brand was founded in October 2023, and since then it has upheld the
                                     philosophy that "everyone can enjoy the beauty of fashion." Its business covers more than 220 countries and regions around the world</p>
                                 <p>The brand was founded in October 2021, and since then it has upheld the
                                     philosophy that "everyone can <strong>DragShop</strong> the beauty of fashion." Its business covers more than 220 countries and regions around the world</p>
-                                <p>The brand was founded in October 2021, and since then it has upheld the
-                                    philosophy that "everyone can enjoy the <strong>ANDSHOP</strong> of fashion." Its business covers more than 220 countries and regions around the world</p>
-                                <p>The brand was founded in October 2021, and since then it has upheld the </p>
+                                <p>The brand was founded in October 2023, and since then it has upheld the
+                                    philosophy that "everyone can enjoy the <strong>DragShop</strong> of fashion." Its business covers more than 220 countries and regions around the world</p>
+                                <p>The brand was founded in October 2023, and since then it has upheld the </p>
                             </div>
                         </div>
                     </div>

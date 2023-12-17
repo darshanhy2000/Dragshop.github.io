@@ -55,11 +55,7 @@ export const ProductData = [
         hover_img: img9,
         title: "T-Shirt For Men",
         price: 199,
-        description: `Discover the essence of style with our exclusive T-Shirt for Men, now available at an unbeatable 45% OFF. Embrace a blend of sophistication and trendy enthusiasm. Immerse yourself in the comfort of this carefully crafted piece that speaks volumes about your unique taste.
-        
-        Elevate your fashion quotient with this premium T-shirt, perfect for any occasion. Lorem ipsum dolor sit amet, brother, delve into the realm of refined thinking and embrace your inner trendsetter. Experience a trouble-free sense of style – no compromises, only unparalleled fashion.
-        
-        This T-shirt is not just a garment; it's a statement. With a rating of 3.3 from 80 satisfied customers, it's a testament to quality and style. Don't miss out on this exclusive offer. 
+        description: `This T-shirt is not just a garment; it's a statement. With a rating of 3.3 from 80 satisfied customers, it's a testament to quality and style. Don't miss out on this exclusive offer. 
         Step into a world where fashion meets affordability. Grab yours now and redefine your wardrobe.`,
         rating: {
             rate: 3.3,
@@ -89,10 +85,9 @@ export const ProductData = [
         category: "fashion",
         img: img3,
         hover_img: img7,
-        title: "V-Neck Dress",
-        price: 34,
-        description: `Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in 
-        faucibus orci luctus et ultrices posuere cubilia Curae;`,
+        title: "T-Shirt For Men",
+        price: 340,
+        description: `Introducing our stylish "T-Shirt For Men" from our fashion collection, now available at an exclusive 50% OFF! Elevate your wardrobe with this modern and comfortable piece that effortlessly combines fashion and comfort;`,
         rating: {
             rate: 4.9,
             count: 156
@@ -121,11 +116,10 @@ export const ProductData = [
         category: "fashion",
         img: img4,
         hover_img: img6,
-        title: "Maxi Dress",
-        price: 43,
-        description: `Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit 
-        amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim.`,
-        rating: {
+        title: "T-Shirt For Men",
+        price: 300,
+        description: `Introducing our stylish "T-Shirt For Men" from our fashion collection, now available at an exclusive 50% OFF! Elevate your wardrobe with this modern and comfortable piece that effortlessly combines fashion and comfort;`,
+            rating: {
             rate: 1.9,
             count: 190
         },
@@ -153,10 +147,9 @@ export const ProductData = [
         category: "fashion",
         img: img5,
         hover_img: img1,
-        title: "Fit-Flare Dress",
-        price: 52,
-        description: `Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malesuada feugiat.`,
+        title: "Fit-Tshirt ",
+        price: 520,
+        description: `Introducing our stylish "T-Shirt For Men" from our fashion collection, now available at an exclusive 50% OFF! Elevate your wardrobe with this modern and comfortable piece that effortlessly combines fashion and comfort`,
         rating: {
             rate: 3.6,
             count: 20
@@ -185,10 +178,9 @@ export const ProductData = [
         category: "fashion",
         img: img6,
         hover_img: img4,
-        title: "Midi Dress",
-        price: 14,
-        description: `Nulla quis lorem ut libero malesuada feugiat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. 
-        Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec sollicitudin molestie malesuada`,
+        title: "T-Shirt Yellow",
+        price: 1400,
+        description: `Introducing our stylish "T-Shirt For Men" from our fashion collection, now available at an exclusive 50% OFF! Elevate your wardrobe with this modern and comfortable piece that effortlessly combines fashion and comfort`,
         rating: {
             rate: 3.9,
             count: 120
@@ -217,10 +209,9 @@ export const ProductData = [
         category: "fashion",
         img: img7,
         hover_img: img3,
-        title: "Tulip Dress",
-        price: 41,
-        description: `Donec rutrum congue leo eget malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit nisi, pretium ut lacinia in, elementum id enim.`,
+        title: "Compression For Men",
+        price: 410,
+        description: `Introducing our stylish "T-Shirt For Men" from our fashion collection, now available at an exclusive 50% OFF! Elevate your wardrobe with this modern and comfortable piece that effortlessly combines fashion and comfort`,
         rating: {
             "rate": 1.9,
             "count": 10
@@ -249,10 +240,9 @@ export const ProductData = [
         category: "fashion",
         img: img8,
         hover_img: img2,
-        title: "Skater Dress",
-        price: 21,
-        description: `Nulla quis lorem ut libero malesuada feugiat. Donec sollicitudin molestie malesuada.
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada.`,
+        title: "Blezer",
+        price: 2500,
+        description: `Introducing our exquisite "Blazer" at an irresistible price of 2500. Elevate your wardrobe with this sophisticated piece that effortlessly combines style and versatility.`,
         rating: {
             rate: 2.9,
             count: 20
@@ -281,10 +271,9 @@ export const ProductData = [
         category: "fashion",
         img: img9,
         hover_img: img1,
-        title: "Boho Tops for Girls",
-        price: 46,
-        description: ` Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. 
-        Cras ultricies ligula sed magna dictum porta. Donec sollicitudin molestie malesuada.`,
+        title: "Blezer Black For Girls",
+        price: 3500,
+        description: ` Introducing our exquisite "Blazer" at an irresistible price of 3500. Elevate your wardrobe with this sophisticated piece that effortlessly combines style and versatility.`,
         rating: {
             rate: 3.9,
             count: 120
