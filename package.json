@@ -17,7 +17,7 @@
     "google-map-react": "^2.1.10",
     "p-min-delay": "^4.0.1",
     "rating-star": "^1.1.0",
-    "react": "^17.0.2",
+    "react": "^16.13.1",
     "react-bootstrap": "^2.0.0-rc.0",
     "react-chartjs-2": "^3.0.4",
     "react-compound-timer": "^2.0.5",
