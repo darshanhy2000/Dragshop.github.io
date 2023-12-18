@@ -36,11 +36,10 @@ const ProductDetailsOne = () => {
 
     const [count, setCount] = useState(1)
 
-    const [img, setImg] = useState(product ? product.img : '');
+    const [img, setImg] = useState(product ? product.img: './shop')
 
-
-    function incNum() {
-        setCount(count + 1);
+    const incNum = () => {
+        setCount(count + 1)
     }
     const decNum = () => {
         if (count > 1) {
@@ -107,21 +106,19 @@ const ProductDetailsOne = () => {
                                                 <div className="input-group-button">
                                                     <button type="button" className="button" onClick={decNum}>
                                                         <i className="fa fa-minus"></i>
-                                                    </button>
-                                                </div>
-                                                <input className="form-control" type="number" value={count} readOnly />
-                                                <div className="input-group-button">
+                                                  </button>                                                 </div>
+                                              <input className="form-control" type="number" value={count} readOnly />
+                                              <div className="input-group-button">
                                                     <button type="button" className="button" onClick={incNum}>
-                                                        <i className="fa fa-plus"></i>
-                                                    </button>
+                                                       <i className="fa fa-plus"></i>
+                                                   </button>
                                                 </div>
-                                            </div>
+                                             </div>
                                         </div>
                                     </form>
                                     <div className="links_Product_areas">
-                                        <ul>
-                                            <li>
-                                                <a href="#!" className="action wishlist" title="Wishlist" onClick={() => addToFav(product.id)}><i
+                                        <ul>                                            <li>                                                 
+                                            <a href="#!" className="action wishlist" title="Wishlist" onClick={() => addToFav(product.id)}><i
                                                     className="fa fa-heart"></i>Add To Wishlist</a>
                                             </li>
                                             <li>
@@ -144,10 +141,10 @@ const ProductDetailsOne = () => {
                 <div className="row">
                     <div className="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-12 col-12">
                         <div className="empaty_cart_area">
-                            <img src={img} alt="img" />
-                            <h2>PRODUCT NOT FOUND</h2>
-                            <h3>Sorry... No Item Found according to Your query!</h3>
-                            <Link to="/shop" className="btn btn-black-overlay btn_sm">Continue Shopping</Link>
+                            {/* <img src={img} alt="img" /> */}
+                            {/* <h2>PRODUCT NOT FOUND</h2> */}
+                            {/* <h3>Sorry Mate... No Item Found according to Your query!</h3> */}
+                            {/* <Link to="/shop" className="btn btn-black-overlay btn_sm">Continue Shopping</Link> */}
                         </div>
                     </div>
                 </div>
@@ -159,4 +156,4 @@ const ProductDetailsOne = () => {
     )
 }
 
-export default ProductDetailsOne
+export default ProductDetailsOne;

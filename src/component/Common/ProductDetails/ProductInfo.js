@@ -7,7 +7,7 @@ import user3 from '../../../assets/img/user/user3.png'
 const ReviewData = [
     {
         img: user1,
-        name: "Sara Anela",
+        name: " Archana",
         date: "5 days ago",
         replay: "Replay",
         report: "Report",
@@ -19,7 +19,7 @@ const ReviewData = [
     },
     {
         img: user2,
-        name: "Sara Anela",
+        name: "Darshan Druva",
         date: "5 days ago",
         replay: "Replay",
         report: "Report",
