@@ -101,7 +101,7 @@ export const MenuData = [
                 href: "/lookbooks"
             },
             {
-                name: "Invoice 1",
+                name: "Invoice",
                 href: "/invoice-one"
             },
         ]

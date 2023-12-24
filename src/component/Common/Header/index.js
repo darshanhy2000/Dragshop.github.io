@@ -273,7 +273,7 @@ const Header = () => {
                                                 <li><Link to="/product-hover">Product Hover</Link></li>
                                                 <li><Link to="/order-success">Order Success</Link></li>
                                                 <li><Link to="/lookbooks">LookBook</Link></li>
-                                                <li><Link to="/invoice-two">Invoice 2</Link></li>
+                                                <li><Link to="/invoice-one">Invoice</Link></li>
                                             </ul>
 
                                             : null
