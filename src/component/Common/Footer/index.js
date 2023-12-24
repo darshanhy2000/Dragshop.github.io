@@ -7,6 +7,20 @@ import NewsletterModal from '../NewsletterModal'
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux";
 import Swal from 'sweetalert2'
+import {
+    FacebookShareButton,
+    TwitterShareButton,
+    LinkedinShareButton,
+    TelegramShareButton,
+    WhatsappShareButton,
+  } from 'react-share';
+  import {
+    FacebookIcon,
+    TwitterIcon,
+    LinkedinIcon,
+    TelegramIcon,
+    WhatsappIcon,
+  } from 'react-share';
 
 const FooterData = [
     {
@@ -102,23 +116,24 @@ const Footer = () => {
 
                                 </p>
                                 <div className="footer_left_side_icon">
-                                    <ul>
-                                        <li>
-                                            <a href="#!"><i className="fa fa-facebook-f"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#!"><i className="fa fa-twitter"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#!"><i className="fa fa-linkedin"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#!"><i className="fa fa-instagram"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#!"><i className="fa fa-google"></i></a>
-                                        </li>
-                                    </ul>
+                                    
+                                <div className="posted_icons_one">
+                                    <FacebookShareButton url={'#1'} quote={'Best Products'}>
+                                        <FacebookIcon size={32} round />
+                                    </FacebookShareButton>
+                                    <TwitterShareButton url={'#2'} title={'Best Products'}>
+                                        <TwitterIcon size={32} round />
+                                    </TwitterShareButton>
+                                    <LinkedinShareButton url={'#3'} title={'Best Products'}>
+                                        <LinkedinIcon size={32} round />
+                                    </LinkedinShareButton>
+                                    <TelegramShareButton url={'#4'} title={'Best Products'}>
+                                        <TelegramIcon size={32} round />
+                                    </TelegramShareButton>
+                                    <WhatsappShareButton url={'#'} title={'Best Products'}>
+                                        <WhatsappIcon size={32} round />
+                                    </WhatsappShareButton>
+                        </div>
                                 </div>
                             </div>
                         </div>
