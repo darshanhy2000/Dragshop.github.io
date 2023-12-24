@@ -331,8 +331,9 @@ const Header = () => {
                     <address className="address">
                         <img src={logoWhite} alt="logo" />
                         <span>Address: bengaluru.</span>
-                        <span>Call Us:6136408744</span>
-                        <span>Email: demo@example.com</span>
+                        <span>Call Us: <a href="tel:6136408744">613-640-8744</a></span>
+                        <span>Email: <a href="mailto:demo@example.com">demo@example.com</a></span>
+
                     </address>
                     <ul className="social-link">
                         <li>

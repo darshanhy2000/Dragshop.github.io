@@ -1,34 +1,4 @@
-@media (max-width: 1440px) {
-    .electronics_slider_content h2 {
-        line-height: 60px;
-    }
 
-    .product_var_one_text_center {
-        left: 30px;
-        -moz-transform: translateY(-8%);
-        -webkit-transform: translateY(-8%);
-        transform: translateY(-8%);
-        width: 80%;
-    }
-
-    #banner_one {
-        padding: 150px 0;
-        background-position: center;
-    }
-
-    .main-menu nav>ul>li>a {
-        padding: 25px 20px;
-    }
-
-    .mobile-menu-logo .logo {
-        width: 65%;
-        overflow: hidden;
-    }
-
-    .cookie-bar p {
-        font-size: 14px;
-    }
-}
 
 @media (max-width: 1199px) {
     .banner_text_one h1 {

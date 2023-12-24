@@ -54,10 +54,10 @@ export const MenuData = [
                         name: "Cart View One",
                         href: "/cart"
                     },
-                    {
-                        name: "Empty Cart",
-                        href: "/empty-cart"
-                    },
+                    // {
+                    //     name: "Empty Cart",
+                    //     href: "/empty-cart"
+                    // },
                     {
                         name: "Checkout View One",
                         href: "/checkout-one"
