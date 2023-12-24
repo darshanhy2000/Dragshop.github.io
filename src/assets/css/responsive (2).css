@@ -97,6 +97,11 @@
         line-height: 76px;
     }
 
+    .banner_text_one {
+        background-color: black;
+    }
+    
+
     /* Adjust padding for blog area one */
     #blog_area_one .container .row .col-lg-4 .blog_one_item {
         padding-top: 30px;

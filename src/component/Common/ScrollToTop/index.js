@@ -1,16 +1,25 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router";
-import React from 'react';
+import PropTypes from 'prop-types';
 
-const ScrollToTop = (props) => {
+const ScrollToTop = ({ children, offset = 0 }) => {
   const location = useLocation();
+
   useEffect(() => {
     if (!location.hash) {
-      window.scrollTo(0, 0);
+      window.scrollTo({
+        top: offset,
+        behavior: "smooth" // Add smooth scrolling behavior
+      });
     }
-  }, [location]);
+  }, [location, offset]);
 
-  return <>{props.children}</>
+  return <>{children}</>;
+};
+
+ScrollToTop.propTypes = {
+  children: PropTypes.node.isRequired,
+  offset: PropTypes.number // You can set a default offset value if needed
 };
 
 export default ScrollToTop;

@@ -21,10 +21,10 @@ export const ProductData = [
         category: "fashion",
         img: img1,
         hover_img: img10,
-        title: "Green Dress For Woman",
-        price: 38,
-        description: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.`,
+        title: "Annaboda 2.0 HSP Sweater - Willow Green.",
+        price: 3800,
+        description: `Stay warm and stylish with the Annaboda 2.0 HSP Sweater in Willow Green. Crafted for comfort, this sweater is perfect for chilly days and outdoor adventures. Its timeless design and high-quality materials make it a must-have in your wardrobe. Embrace the cozy feel and versatility of this sweater, whether you're exploring the outdoors or simply relaxing at home. The classic Willow Green color adds
+         a touch of nature-inspired charm. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.`,
         rating: {
             rate: 3.9,
             count: 30
