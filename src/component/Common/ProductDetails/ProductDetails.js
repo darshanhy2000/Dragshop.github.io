@@ -106,7 +106,8 @@ const ProductDetailsOne = () => {
                                                 <div className="input-group-button">
                                                     <button type="button" className="button" onClick={decNum}>
                                                         <i className="fa fa-minus"></i>
-                                                  </button>                                                 </div>
+                                                  </button>                                                 
+                                            </div>
                                               <input className="form-control" type="number" value={count} readOnly />
                                               <div className="input-group-button">
                                                     <button type="button" className="button" onClick={incNum}>
