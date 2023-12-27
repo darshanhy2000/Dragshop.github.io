@@ -1,13 +1,14 @@
 import ProductInfo from './ProductInfo'
 import RelatedProduct from './RelatedProduct'
 import { Link } from 'react-router-dom'
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from 'react-router-dom';
 import { RatingStar } from "rating-star";
+import Swal from 'sweetalert2';
 
 const ProductDetailsTwo = () => {
     let dispatch = useDispatch();
@@ -26,27 +27,33 @@ const ProductDetailsTwo = () => {
     }
 
     // Add to Compare
-    const addToComp = async (id) => {
-        dispatch({ type: "products/addToComp", payload: { id } })
-    }
+    // const addToComp = async (id) => {
+    //     dispatch({ type: "products/addToComp", payload: { id } })
+    // }
     // Quenty Inc Dec
-    const [count, setCount] = useState(1)
+    const [count, setCount] = useState(0);
+
+    const [img, setImg] = useState(product ? product.img : './shop');
+    
     const incNum = () => {
-        setCount(count + 1)
-    }
+      setCount(count + 1);
+    };
+    
     const decNum = () => {
-        if (count > 0) {
-            setCount(count - 1)
-        } else {
-            alert("Sorry, Zero Limit Reached")
-            setCount(0)
-        }
-    }
-    const [img, setImg] = useState(product.img)
-    const colorSwatch = (i) => {
-        let data = product.color.find(item => item.color === i)
-        setImg(data.img)
-    }
+      setCount(count - 1);
+    //   Optionally, you can show a warning if count becomes negative
+      if (count > 0) {
+        setCount(count - 1);
+      } else {
+        Swal.fire('Sorry!', "Minimum Quantity Reached", 'warning');
+        setCount(0);
+      }
+    };
+
+const colorSwatch = (i) => {
+    let data = product.color.find((item) => item.color === i);
+    setImg(data.img);
+};
 
     let settings = {
         arrows: true,
@@ -154,10 +161,10 @@ const ProductDetailsTwo = () => {
                                                 <a href="#!" className="action wishlist" title="Wishlist" onClick={() => addToFav(product.id)}><i
                                                     className="fa fa-heart"></i>Add To Wishlist</a>
                                             </li>
-                                            <li>
+                                            {/* <li>
                                                 <a href="#!" className="action compare" title="Compare" onClick={() => addToComp(product.id)}><i
                                                     className="fa fa-exchange"></i>Add To Compare</a>
-                                            </li>
+                                            </li> */}
                                         </ul>
                                         <a href="#!" className="theme-btn-one btn-black-overlay btn_sm" onClick={() => addToCart(product.id)}>Add To Cart</a>
                                     </div>

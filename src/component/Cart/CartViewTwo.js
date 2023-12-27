@@ -43,36 +43,37 @@ const CartViewTwo = () => {
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                {carts.map((data, index) => (
+                                            <tbody>
+                                                {carts.length > 0 ? (
+                                                    carts.map((data, index) => (
                                                     <tr key={index}>
+                                                        <td className="product_remove">
+                                                        <i className="fa fa-trash text-danger" onClick={() => rmProduct(data.id)} style={{ 'cursor': 'pointer' }}></i>
+                                                        </td>
                                                         <td className="product_thumb">
-                                                            <Link to={`/product-details-one/₹{data.id}`}>
-                                                                <img src={data.img} alt="img" />
-                                                            </Link>
+                                                        <Link to={`/product-details-one/₹{data.id}`}>
+                                                            <img src={data.img} alt="img" />
+                                                        </Link>
                                                         </td>
                                                         <td className="product_name">
-                                                            <Link to={`/product-details-one/₹{data.id}`}> {data.title}</Link>
+                                                        <Link to={`/product-details-one/₹{data.id}`}>
+                                                            {data.title}
+                                                        </Link>
                                                         </td>
                                                         <td className="product-price">₹{data.price}.00</td>
                                                         <td className="product_quantity">
-                                                            <div className="plus-minus-input">
-                                                                <div className="input-group-button">
-                                                                    <button type="button" className="button" onClick={e => cartValUpdate((data.quantity || 2) - 1, data.id)}>
-                                                                        <i className="fa fa-minus" aria-hidden="true"></i>
-                                                                    </button>
-                                                                </div>
-                                                                <input type="number" id="cart_val" onChange={e => cartValUpdate(e.currentTarget.value, data.id)} value={data.quantity || 1} />
-                                                                <div className="input-group-button">
-                                                                    <button type="button" className="button" onClick={e => cartValUpdate((data.quantity || 1) + 1, data.id)}>
-                                                                        <i className="fa fa-plus" aria-hidden="true"></i>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
+                                                        <input min="1" max="100" type="number" onChange={e => cartValUpdate(e.currentTarget.value, data.id)} defaultValue={data.quantity || 1} />
                                                         </td>
                                                         <td className="product_total">₹{data.price * (data.quantity || 1)}.00</td>
-                                                        <td className="product_remove"><a href="#!" onClick={() => rmProduct(data.id)} style={{ 'cursor': 'pointer' }}><i className="fa fa-trash text-danger"></i></a></td>
                                                     </tr>
-                                                ))}
+                                                    ))
+                                                ) : (
+                                                    <tr>
+                                                    <td colSpan="6">Your cart is empty.</td>
+                                                    </tr>
+                                                )}
+                                                </tbody>
+
 
                                             </tbody>
                                         </table>

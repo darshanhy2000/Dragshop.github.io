@@ -31,15 +31,14 @@ const FooterData = [
             { linkTitle: "Privacy Policy", link: "/privacy-policy" },
             { linkTitle: "Frequently Questions", link: "/faqs" },
             { linkTitle: "Order Tracking", link: "/order-tracking" },
-            // { linkTitle: "Compare", link: "/compare" }
+          
         ]
     },
     {
         title: "SHOP",
         links: [
-            { linkTitle: "Cart View One", link: "/cart" },
-            { linkTitle: "Empty Cart", link: "/empty-cart" },
-            { linkTitle: "Checkout View One", link: "/checkout-one" },
+            { linkTitle: "Cart View", link: "/cart" },
+            { linkTitle: "Checkout View ", link: "/checkout-one" },
             { linkTitle: "Wishlist", link: "/wishlist" }
         ]
     }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import ProductInfo from './ProductInfo'
 import RelatedProduct from './RelatedProduct'
 import { Link } from 'react-router-dom'
@@ -25,32 +25,37 @@ const ProductDetailsOne = () => {
     }
 
     // Add to Compare
-    const addToComp = async (id) => {
-        dispatch({ type: "products/addToComp", payload: { id } })
-    }
+    // const addToComp = async (id) => {
+    //     dispatch({ type: "products/addToComp", payload: { id } })
+    // }
 
     const colorSwatch = (i) => {
         let data = product.color.find(item => item.color === i)
         setImg(data.img)
     }
 
-    const [count, setCount] = useState(1)
+    const [count, setCount] = useState(0);
 
-    const [img, setImg] = useState(product ? product.img: './shop')
+const [img, setImg] = useState(product ? product.img : './shop');
 
-    const incNum = () => {
-        setCount(count + 1)
-    }
-    const decNum = () => {
-        if (count > 1) {
-            setCount(count - 1)
-        } else {
-            Swal.fire('Sorry!', "Minimun Quantity Reached",'warning')
-            setCount(1)
-        }
-    }
+const incNum = () => {
+  setCount(count + 1);
+};
+
+const decNum = () => {
+  setCount(count - 1);
+//   Optionally, you can show a warning if count becomes negative
+  if (count > 0) {
+    setCount(count - 1);
+  } else {
+    Swal.fire('Sorry!', "Minimum Quantity Reached", 'warning');
+    setCount(0);
+  }
+};
+    
     return (
-        <>{product
+        <>{
+            product
             ?
             <section id="product_single_onenvm --version
             " className="ptb-100">
@@ -118,14 +123,15 @@ const ProductDetailsOne = () => {
                                         </div>
                                     </form>
                                     <div className="links_Product_areas">
-                                        <ul>                                            <li>                                                 
+                                        <ul>
+                                            <li>                                                 
                                             <a href="#!" className="action wishlist" title="Wishlist" onClick={() => addToFav(product.id)}><i
                                                     className="fa fa-heart"></i>Add To Wishlist</a>
                                             </li>
-                                            <li>
+                                            {/* <li>
                                                 <a href="#!" className="action compare" onClick={() => addToComp(product.id)} title="Compare"><i
                                                     className="fa fa-exchange"></i>Add To Compare</a>
-                                            </li>
+                                            </li> */}
                                         </ul>
                                         <a href="#!" className="theme-btn-one btn-black-overlay btn_sm" onClick={() => addToCart(product.id)}>Add To Cart</a>
                                     </div>
@@ -143,9 +149,9 @@ const ProductDetailsOne = () => {
                     <div className="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-12 col-12">
                         <div className="empaty_cart_area">
                             {/* <img src={img} alt="img" /> */}
-                            {/* <h2>PRODUCT NOT FOUND</h2> */}
-                            {/* <h3>Sorry Mate... No Item Found according to Your query!</h3> */}
-                            {/* <Link to="/shop" className="btn btn-black-overlay btn_sm">Continue Shopping</Link> */}
+                            <h2>PRODUCT NOT FOUND</h2>
+                            <h3>Sorry Mate... No Item Found according to Your query!</h3>
+                            <Link to="/shop" className="btn btn-black-overlay btn_sm">Continue Shopping</Link>
                         </div>
                     </div>
                 </div>
