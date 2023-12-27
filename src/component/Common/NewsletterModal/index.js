@@ -1,8 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../../assets/img/logo.png'
 import img from '../../../assets/img/common/modal.png'
+import Swal from 'sweetalert2';
 import Modal from 'react-bootstrap/Modal';
+
 const NewsletterModal = (props) => {
+    const [email, setEmail] = useState('');
+    const [isValidEmail, setIsValidEmail] = useState(true);
+    const [errorMessage, setErrorMessage] = useState(false); // Define the errorMessage state
+  
+    const handleEmailChange = (e) => {
+      setEmail(e.target.value);
+      setIsValidEmail(validateEmail(e.target.value));
+      // Clear the error message when the user starts typing a valid email
+      setErrorMessage('Please enter a valid email address');
+    };
+  
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Check if the email is valid before submitting the form
+        if (isValidEmail) {
+          props.stop();
+          props.start();
+          Swal.fire('Success', 'Thank you for your Subscription', 'success');
+        } else {
+          
+        }
+      };
+  
+    const validateEmail = (email) => {
+      // Simple email validation using a regular expression
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    };
+
     return (
         <>
             <Modal show={props.show}
@@ -16,7 +47,6 @@ const NewsletterModal = (props) => {
                                     <button type="button" className="close" data-dismiss="modal" aria-label="Close" onClick={props.start}>
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="row">
@@ -25,19 +55,46 @@ const NewsletterModal = (props) => {
                                                 <img src={logo} alt="logo" />
                                                 <h3>SUBSCRIBE TO NEWSLETTER</h3>
                                                 <p>Subscribe to the DragShop mailing list to receive updates
-                                                    on new arrivals, special offers and our promotions.</p>
-                                                <form onSubmit={(e) => {e.preventDefault();props.stop();props.start()}}>
-                                                    <div className="input-group mb-3">
-                                                        <input type="email" className="form-control" placeholder="Your Email address" required />
-                                                        <div className="input-group-append">
-                                                            <button className="theme-btn-one btn-black-overlay btn_sm" type="submit" >Subscribe</button>
-                                                        </div>
+                                                    on new arrivals, special offers and our promotions.</p><br>
+                                                    </br>
+                                                
+                                                 {errorMessage && (
+                                                    <div className="alert alert-danger" role="alert">
+                                                        {errorMessage}
                                                     </div>
-                                                    <div className="check_boxed_modal">
-                                                        <input className="form-check-input" type="checkbox" id="vehicle1" name="vehicle1" defaultValue="Bike" onClick={props.stop} />
-                                                        <label htmlFor="vehicle1">Don't show this popup again</label>
-                                                    </div>
-                                                </form>
+                                                    )}
+                                                 
+                                                <form onSubmit={handleSubmit}>
+                                            <div className="input-group mb-3">
+                                                <input
+                                                type="email"
+                                                className={`form-control ${isValidEmail ? '' : 'is-invalid'}`}
+                                                placeholder="Your Email address"
+                                                value={email}
+                                                onChange={handleEmailChange}
+                                                required
+                                                />
+                                                <div className="input-group-append">
+                                                <button className="theme-btn-one btn-black-overlay btn_sm" type="submit">
+                                                    Subscribe
+                                                </button>
+                                                </div>
+                                            </div>
+                                            <div className="check_boxed_modal">
+                                                <input
+                                                className="form-check-input"
+                                                type="checkbox"
+                                                id="vehicle1"
+                                                name="vehicle1"
+                                                value="Bike"
+                                                onClick={props.stop}
+                                                />
+                                                <label htmlFor="vehicle1">Don't show this popup again</label>
+                                            </div>
+                                            {!isValidEmail && (
+                                                <div className="invalid-feedback">Please enter a valid email address.</div>
+                                            )}
+                                            </form>     
                                             </div>
                                         </div>
                                         <div className="col-lg-5 col-md-6">
