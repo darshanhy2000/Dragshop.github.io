@@ -30,6 +30,7 @@
     "react-compound-timer": "^2.0.5",
     "react-countdown-clock-timer": "^2.1.2",
     "react-dom": "^18.2.0",
+    
     "react-icons": "^4.2.0",
     "react-messenger-customer-chat": "^0.8.0",
     "react-redux": "^7.2.5",
