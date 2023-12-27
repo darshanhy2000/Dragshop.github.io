@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
@@ -13,18 +14,22 @@
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^5.1.1",
     "chart.js": "^3.5.1",
+    "chokidar": "^3.5.3",
+    "eslint-loader": "^4.0.2",
     "font-awesome": "^4.7.0",
     "google-map-react": "^2.1.10",
+    "html-webpack-plugin": "^5.6.0",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
+    "lodash": "^4.17.21",
     "p-min-delay": "^4.0.1",
     "rating-star": "^1.1.0",
-    "react": "^16.14.0",
+    "react": "^18.2.0",
     "react-bootstrap": "^2.0.0-rc.0",
     "react-chartjs-2": "^3.0.4",
     "react-compound-timer": "^2.0.5",
     "react-countdown-clock-timer": "^2.1.2",
-    "react-dom": "^16.14.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^4.2.0",
     "react-messenger-customer-chat": "^0.8.0",
     "react-redux": "^7.2.5",
@@ -35,7 +40,9 @@
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
     "sweetalert2": "^11.1.6",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "webpack": "4.42.0",
+    "webpack-manifest-plugin": "2.2.0"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
@@ -61,5 +68,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "webpack-manifest-plugin": "^5.0.0"
   }
 }

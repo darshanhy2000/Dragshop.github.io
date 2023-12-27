@@ -1,26 +1,26 @@
-import React, { useEffect } from 'react'
-import logo from '../../../assets/img/logo.png'
-import payment from '../../../assets/img/common/payment.png'
-import { Link } from 'react-router-dom'
-import Cookie from '../Cookie'
-import NewsletterModal from '../NewsletterModal'
-import { useSelector } from "react-redux"
-import { useDispatch } from "react-redux";
-import Swal from 'sweetalert2'
+import React, { useEffect, useState } from 'react';
+import logo from '../../../assets/img/logo.png';
+import payment from '../../../assets/img/common/payment.png';
+import { Link } from 'react-router-dom';
+import Cookie from '../Cookie';
+import NewsletterModal from '../NewsletterModal';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import Swal from 'sweetalert2';
 import {
-    FacebookShareButton,
-    TwitterShareButton,
-    LinkedinShareButton,
-    TelegramShareButton,
-    WhatsappShareButton,
-  } from 'react-share';
-  import {
-    FacebookIcon,
-    TwitterIcon,
-    LinkedinIcon,
-    TelegramIcon,
-    WhatsappIcon,
-  } from 'react-share';
+  FacebookShareButton,
+  TwitterShareButton,
+  LinkedinShareButton,
+  TelegramShareButton,
+  WhatsappShareButton,
+} from 'react-share';
+import {
+  FacebookIcon,
+  TwitterIcon,
+  LinkedinIcon,
+  TelegramIcon,
+  WhatsappIcon,
+} from 'react-share';
 
 const FooterData = [
     {
@@ -46,66 +46,84 @@ const FooterData = [
 ]
 
 const Footer = () => {
-    let dispatch = useDispatch();
+  let dispatch = useDispatch();
 
-    let promoCenter = useSelector((state) => state.settings.promoCenter);
-    let promoStatus = useSelector((state) => state.settings.promoStatus);
-    let stopPromo = useSelector((state) => state.settings.stopPromo);
-    let cookie = useSelector((state) => state.settings.cookie);
-    let stopCookie = useSelector((state) => state.settings.stopCookie);
+  let promoCenter = useSelector((state) => state.settings.promoCenter);
+  let promoStatus = useSelector((state) => state.settings.promoStatus);
+  let stopPromo = useSelector((state) => state.settings.stopPromo);
+  let cookie = useSelector((state) => state.settings.cookie);
+  let stopCookie = useSelector((state) => state.settings.stopCookie);
 
-    useEffect(() => {
-        if (promoStatus) {
-            return
-        } else {
-            dispatch({ type: "settings/promoStatus" })
-            setTimeout(function () {
-                dispatch({ type: "settings/promoCenter" })
-            }, 2000)
-        }
+  const [email, setEmail] = useState('');
 
-        if (stopCookie) {
-            return
-        } else {
-            setTimeout(function () {
-                dispatch({ type: "settings/cookie" })
-            }, 6000)
-        }
-    }, [dispatch, promoStatus, stopCookie]);
-
-
-    const startPromoModal = () => {
-        if (stopPromo) {
-            dispatch({ type: "settings/promoCenter" })
-            return;
-        } else {
-            dispatch({ type: "settings/promoCenter" })
-            setTimeout(function () {
-                dispatch({ type: "settings/promoCenter" })
-            }, 700000)
-        }
-
+  useEffect(() => {
+    if (promoStatus) {
+      return;
+    } else {
+      dispatch({ type: 'settings/promoStatus' });
+      setTimeout(function () {
+        dispatch({ type: 'settings/promoCenter' });
+      }, 2000);
     }
 
-    const stopPromoModal = () => {
-        dispatch({ type: "settings/stopPromo" })
+    if (stopCookie) {
+      return;
+    } else {
+      setTimeout(function () {
+        dispatch({ type: 'settings/cookie' });
+      }, 6000);
     }
+  }, [dispatch, promoStatus, stopCookie]);
 
-    const cancelCookie = () => {
-        dispatch({ type: "settings/cookie" })
+  const startPromoModal = () => {
+    if (stopPromo) {
+      dispatch({ type: 'settings/promoCenter' });
+      return;
+    } else {
+      dispatch({ type: 'settings/promoCenter' });
+      setTimeout(function () {
+        dispatch({ type: 'settings/promoCenter' });
+      }, 700000);
     }
+  };
 
-    const acceptCookie = () => {
-        // Write your function there
-        dispatch({ type: "settings/cookie" })
+  const stopPromoModal = () => {
+    dispatch({ type: 'settings/stopPromo' });
+  };
+
+  const cancelCookie = () => {
+    dispatch({ type: 'settings/cookie' });
+  };
+
+  const acceptCookie = () => {
+    // Write your function there
+    dispatch({ type: 'settings/cookie' });
+  };
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const emailInput = document.querySelector("input[type='email']");
+    const emailValue = emailInput.value.trim();
+
+    if (validateEmail(emailValue)) {
+      Swal.fire('Success', 'Thank you for your Subscription', 'success');
+      emailInput.value = '';
+    } else {
+      Swal.fire('Error', 'Please enter a valid email address', 'error');
     }
+  };
 
-    return (
-        <>
-            <footer id="footer_one">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-4 col-md-12 col-sm-12 col-12">
+  return (
+    <>
+      <footer id="footer_one">
+        <div className="container">
+          <div className="row">
+          <div className="col-lg-4 col-md-12 col-sm-12 col-12">
                             <div className="footer_left_side">
                                 <Link to="/" ><img src={logo} alt="logo" /></Link>
                                 <p>
@@ -162,31 +180,46 @@ const Footer = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className="col-lg-3 col-md-12 col-sm-12 col-12">
-                            <div className="footer_one_widget">
-                                <h3>NEWSLETTER</h3>
-                                <div id="mc_embed_signup" className="subscribe-form">
-                                    <form onSubmit={(e) => { e.preventDefault(); Swal.fire('Success', 'Thank you for your Subscribtion', 'success'); document.querySelector("input[type='email']").value = "" }}>
-                                        <div className="mc-form">
-                                            <input className="form-control" type="email" placeholder="Your Mail" name="EMAIL" defaultValue="" required />
-                                            <div className="clear">
-                                                <button className="theme-btn-one btn_md" type="submit" name="subscribe" defaultValue=""> Send Mail</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+            <div className="col-lg-3 col-md-12 col-sm-12 col-12">
+              <div className="footer_one_widget">
+                <h3>NEWSLETTER</h3>
+                <div id="mc_embed_signup" className="subscribe-form">
+                  <form onSubmit={handleSubmit}>
+                    <div className="mc-form">
+                      <input
+                        className="form-control"
+                        type="email"
+                        placeholder="Your Mail"
+                        name="EMAIL"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                      />
+                      <div className="clear">
+                        <button
+                          className="theme-btn-one btn_md"
+                          type="submit"
+                          name="subscribe"
+                          value=""
+                        >
+                          Send Mail
+                        </button>
+                      </div>
                     </div>
+                  </form>
                 </div>
-                <div className="go-top active" onClick={() => { window.scrollTo(0, 0) }}>
-                    <i className="fa fa-chevron-up"></i>
-                    <i className="fa fa-arrow-up"></i>
-                </div>
-            </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="go-top active" onClick={() => { window.scrollTo(0, 0) }}>
+          <i className="fa fa-chevron-up"></i>
+          <i className="fa fa-arrow-up"></i>
+        </div>
+      </footer>
 
-            <section id="copyright_one">
-                <div className="container">
+      <section id="copyright_one">
+        <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                             <div className="copyright_left">
@@ -200,13 +233,13 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-            </section>
-            {
-                cookie ? <Cookie accept={acceptCookie} cancel={cancelCookie} /> : null
-            }
-            <NewsletterModal show={promoCenter} stop={stopPromoModal} start={startPromoModal} />
-        </>
-    )
-}
+      </section>
+      {
+        cookie ? <Cookie accept={acceptCookie} cancel={cancelCookie} /> : null
+      }
+      <NewsletterModal show={promoCenter} stop={stopPromoModal} start={startPromoModal} />
+    </>
+  );
+};
 
-export default Footer
+export default Footer;

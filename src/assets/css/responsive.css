@@ -1,79 +1,134 @@
 /* Add some attractive styles for screens up to 1440px */
+/* General Styles */
 @media (max-width: 1440px) {
-    /* Increase line height for better readability */
+    /* ... Your existing styles ... */
+}
+
+/* Electronics Slider Content */
+@media (max-width: 1440px) {
     .electronics_slider_content h2 {
         line-height: 70px;
-        font-size: 48px; /* Adjust font size for better visual balance */
-        color: #333; /* Change font color for better contrast */
+        font-size: 48px;
+        color: #333;
     }
+}
 
-    /* Center the product_var_one_text_center element with a slight transformation */
+/* Product Variation One Text Center */
+@media (max-width: 1440px) {
     .product_var_one_text_center {
         left: 50%;
         transform: translateX(-50%) translateY(-8%);
         width: 80%;
     }
+}
 
-    /* Update banner styling for a cleaner look */
+/* Banner One */
+@media (max-width: 1440px) {
     #banner_one {
-        padding: 120px 0; /* Adjust padding for better proportion */
+        padding: 120px 0;
         background-position: center top;
     }
+}
 
-    /* Improve main menu link padding for touch-friendly design */
+/* Main Menu Links */
+@media (max-width: 1440px) {
     .main-menu nav>ul>li>a {
         padding: 20px 15px;
     }
+}
 
-    /* Make the logo slightly smaller for a more balanced mobile menu */
+/* Mobile Menu Logo */
+@media (max-width: 1440px) {
     .mobile-menu-logo .logo {
         width: 60%;
     }
+}
 
-    /* Style the cookie bar for better visibility */
+/* Cookie Bar */
+@media (max-width: 1440px) {
     .cookie-bar p {
         font-size: 16px;
-        color: #fff; /* Change text color for better contrast */
+        color: #fff;
     }
+}
 
-    /* Increase spacing between navigation links for better touch interaction */
+/* Navigation Links Spacing */
+@media (max-width: 1440px) {
     .drodo-nav .navbar .navbar-nav .nav-item a {
         margin-left: 25px;
         margin-right: 25px;
     }
+}
 
-    /* Update styling for the jewellry_banner */
+/* Jewellry Banner */
+@media (max-width: 1440px) {
     #jewellry_banner {
         background-position: center;
-        background-size: cover; /* Ensure the background image covers the entire area */
-    }
-
-    /* Enhance styling for the jewellry_banner_text */
-    .jewellry_banner_text h1 {
-        font-size: 60px;
-        line-height: 80px;
-        color: #fff; /* Change font color for better contrast */
-    }
-
-    /* Increase font size for paralex_text h2 for a more prominent appearance */
-    .paralex_text h2 {
-        font-size: 60px;
-        color: #333; /* Change font color for better contrast */
+        background-size: cover;
     }
 }
 
-/* Styles for screens up to 992px */
-@media (max-width: 992px) {
-    /* Add styles for specific elements */
+/* Jewellry Banner Text */
+@media (max-width: 1440px) {
+    .jewellry_banner_text h1 {
+        font-size: 60px;
+        line-height: 80px;
+        color: #fff;
+    }
+}
 
-    /* Example styles for different elements */
+/* Paralex Text */
+@media (max-width: 1440px) {
+    .paralex_text h2 {
+        font-size: 40px;
+        padding: 20px 0;
+    }
+
+    .paralex_text p {
+        padding: 0 105px;
+        padding-bottom: 30px;
+    }
+}
+
+/* Additional Styles for Max Width 1199px */
+@media (max-width: 1199px) {
+    .paralex_text h2 {
+        font-size: 40px;
+        padding: 20px 0;
+    }
+
+    .paralex_text p {
+        padding: 0 50px;
+        padding-bottom: 30px;
+    }
+
+    .banner_text_one h1 {
+        font-size: 115px;
+        line-height: 110px;
+    }
+
+    #countdown_two li {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 992px) {
     #cart_area_three .coupon_code {
         margin-top: 30px;
     }
 
-    .baby_blog_card,
-    .baby_offer_one_img,
-    .jewel_serv_card,
+    .baby_blog_card {
+        padding-bottom: 30px;
+    }
+
+    .baby_offer_one_img {
+        padding-bottom: 30px;
+    }
+
+    .jewel_serv_card {
+        padding-bottom: 30px;
+    }
+
     .jewellary_blog_card {
         padding-bottom: 30px;
     }
@@ -87,6 +142,8 @@
         margin-right: 7px;
         font-size: 16px;
     }
+
+    
 
     #shop_main_area .row:nth-child(2) .col-lg-12:nth-child(2) .product_wrappers_list {
         margin-top: 30px;
@@ -178,8 +235,10 @@
         margin-left: 8px;
     }
 
+
     .right_block {
         position: inherit;
+        ;
         width: 100%;
         background: #fff;
         padding: 30px 0 0 0;
@@ -205,7 +264,10 @@
         padding-top: 15px;
     }
 
-    .banner_last_img,
+    .banner_last_img {
+        padding-top: 20px;
+    }
+
     .grocery_banner_img {
         padding-top: 20px;
     }
@@ -237,11 +299,18 @@
         position: relative;
     }
 
-    .jewellary_offer_topimg,
-    .jewellry_banner_text h1,
-    .paralex_text h2 {
+    .jewellary_offer_topimg {
+        padding-bottom: 30px;
+    }
+
+    .jewellry_banner_text h1 {
         font-size: 50px;
         line-height: 60px;
+    }
+
+    .paralex_text h2 {
+        font-size: 40px;
+        padding: 20px 0;
     }
 
     .paralex_text p {
@@ -250,16 +319,11 @@
     }
 }
 
-/* Styles for screens up to 767px */
 @media (max-width: 767px) {
-    /* Center align elements for better mobile experience */
-    .top_header_left,
-    .top-header-menu,
-    .top-header-contact-info {
+    .top_header_left {
         text-align: center;
     }
 
-    /* Style the right list for better mobile visibility */
     .right_list_fix {
         display: flex;
         justify-content: center;
@@ -267,18 +331,15 @@
         padding-top: 10px;
     }
 
-    /* Adjust styling for baby offer banner text */
     .baby_offer_banner_text h2 {
-        padding-bottom: 30px;
-        font-size: 32px;
+        padding-bottom: 50px;
+        font-size: 40px;
     }
 
-    /* Adjust padding for parallax area */
     #paralex_area {
-        padding: 80px 0;
+        padding: 100px 0;
     }
 
-    /* Center align tabs and adjust styles */
     .tabs_left_button .nav-tabs {
         border-bottom: none;
         width: 100%;
@@ -286,343 +347,345 @@
         position: inherit;
         right: 0;
         top: 0;
-        padding-bottom: 20px;
-    }
-
-    /* Style the grocery CTA content for better mobile layout */
-    .grocery_cta_content {
-        text-align: center;
-        padding-left: 0;
-    }
-
-    /* Adjust padding for grocery categories wrapper */
-    .grocery_cat_wrapper {
-        padding-top: 30px;
         padding-bottom: 30px;
     }
 
-    /* Hide grocery CTA on smaller screens */
+    .grocery_cta_content .input-group {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .grocery_cta_content {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .grocery_cat_wrapper {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     .grocery_cta {
         display: none;
     }
 
-    /* Adjust styling for grocery today's area */
     .grocery_todays_area_left {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
-    /* Hide offer time image two on smaller screens */
+    .top-header-menu {
+        text-align: center;
+    }
+
+    .top-header-contact-info {
+        text-align: center;
+    }
+
     .offer_time_img_two {
         display: none;
     }
 
-    /* Adjust styling for image-input label */
     .image-input label {
         width: 50%;
     }
 
-    /* Center align elements in the invoice wrapper */
     .invoice-wrapper .authorise-sign {
         position: relative;
         text-align: center;
     }
 
-    /* Adjust padding for invoice buttons */
     .invoice-wrapper .buttons {
-        padding-top: 15px;
+        padding-top: 20px;
     }
 
-    /* Adjust styling for blog post wrapper */
+    .theme-invoice-1 .invoice-header .detail-bottom ul {
+        display: block;
+    }
+
+    .theme-invoice-4 .invoice-wrapper .invoice-footer ul {
+        display: block;
+        margin-bottom: -20px;
+    }
+
+    .theme-invoice-4 .invoice-wrapper .invoice-footer ul li {
+        margin-bottom: 20px;
+    }
+
+    .theme-invoice-4 .title-sec .title {
+        position: relative;
+        text-align: center;
+        margin-top: 20px;
+    }
+
     .blog_post_wrapper {
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
 
-    /* Center align elements in the cookie bar */
     .cookie-bar {
         display: inherit;
         text-align: center;
         bottom: -107px;
     }
 
-    /* Adjust styling for off-canvas cart action button */
-    .offcanvas-cart-action-button li {
-        margin-bottom: 10px;
+    .row .col-lg-4 .product_variation_one_boxed:last-child {
+        margin-bottom: 0px;
     }
 
-    /* Center align banner text and adjust padding */
+    .row .col-lg-4:first-child .product_variation_one_boxed:last-child {
+        margin-bottom: 30px;
+    }
+
+    #blog_area_one .container .row .col-lg-4:last-child .blog_one_item {
+        padding-top: 30px;
+    }
+
+    #banner_one {
+        padding: 150px 0;
+        background-position: 79%;
+    }
+
+    .offcanvas-cart-action-button {
+        display: inherit;
+    }
+
+    .offcanvas-cart-action-button li {
+        margin-bottom: 15px;
+    }
+
     .banner_text_one {
         position: relative;
         z-index: 9;
-        padding-top: 20px;
     }
 
-    /* Adjust styling for cookie bar text */
     .cookie-bar p {
-        font-size: 14px;
-        line-height: 21px;
+        font-size: 12px;
+        line-height: 19px;
     }
 
-    /* Center align elements in offer time two content */
     .offer_time_two_Content {
         text-align: center;
     }
 
-    /* Adjust styling for countdown two and offer timer two */
     #countdown_two ul {
         justify-content: center;
     }
 
     #offer_timer_two {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 70px;
+        padding-bottom: 70px;
     }
 
     #countdown_two {
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
 
-    /* Adjust styling for pharmacy banner bottom image */
+    .offer_time_two_Content img {
+        width: 100%;
+    }
+
     .pharmacy_banner_bottom_img {
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
 
     .pharmacy_banner_bottom_img img {
         width: 100%;
     }
 
-    /* Adjust styling for newsletter modal offer modal left */
     .newsleetre_modal.modal-body .offer_modal_left {
-        padding: 20px;
+        padding: 25px 35px;
     }
 }
 
-
-
-/* Styles for screens up to 576px */
 @media (max-width: 576px) {
-    /* Adjust padding for baby banner bottom image */
     .baby_banner_bottom_img {
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
 
-    /* Adjust padding for parallax text */
     .paralex_text p {
-        padding: 0 10px;
-        padding-bottom: 20px;
+        padding: 0 0px;
+        padding-bottom: 30px;
     }
 
-    /* Adjust styling for jewellry banner text */
     .jewellry_banner_text h1 {
-        font-size: 36px;
-        line-height: 46px;
+        font-size: 40px;
+        line-height: 53px;
     }
 
-    /* Position and style the view all area */
     .view_all_arae {
         position: inherit;
         text-align: right;
         top: 0;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
 
-    /* Style slider button */
     .slider_button_style .owl-nav {
         top: 0;
         position: inherit;
     }
 
-    /* Adjust styling for image-input label */
     .image-input label {
         width: 70%;
     }
 
-    /* Move cookie bar further down on smaller screens */
+   
+
     .cookie-bar {
         bottom: -150px;
     }
 
-    /* Adjust styling for account setting heading */
     .account_setting_heading h2 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
-    /* Adjust styling for hero image */
     .hero_img img {
         position: absolute;
-        top: -277px;
+        top: -377px;
         right: 0;
     }
 
-    /* Adjust margin for comment info children */
     .comment_info .children {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
-    /* Adjust styling for countdown soon list items */
+    .comment_user img {
+        height: auto;
+        max-width: 55px;
+    }
+
     #countdown_soon ul li:first-child {
         margin-left: auto;
     }
 
-    /* Adjust styling for countdown soon list items */
     #countdown_soon ul li {
-        width: 60px;
-        font-size: 12px;
+        width: 70px;
+        font-size: 14px;
         margin: 0 auto;
     }
 
-    /* Adjust styling for countdown soon list items span */
     #countdown_soon ul li span {
-        font-size: 24px;
-        line-height: 26px;
+        font-size: 28px;
+        line-height: 30px;
     }
 
-    /* Adjust styling for error wrapper heading */
     .erorr_wrapper h1 {
-        font-size: 80px;
-        line-height: 50px;
+        font-size: 100px;
+        line-height: 60px;
     }
 
-    /* Adjust styling for empty cart area heading */
     .empaty_cart_area h2 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
-    /* Adjust styling for empty cart area subheading */
     .empaty_cart_area h3 {
         padding-top: 5px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
-    /* Remove margin bottom for service promo single item in col-lg-3:last-child */
     .row .col-lg-3:last-child .service_promo_single_item {
         margin-bottom: 0;
     }
 
-    /* Display product count one */
     .product_count_one {
         display: inherit;
     }
 
-    /* Adjust margin top for product count one anchor */
     .product_count_one a {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
-    /* Adjust padding right for footer left side paragraph */
     #footer_one .footer_left_side p {
-        padding-right: 0;
+        padding-right: 0px;
     }
 
-    /* Adjust styling for product variation one text */
     .product_var_one_text {
-        left: 5px;
+        left: 10px;
     }
 
-    /* Adjust styling for product variation one text center */
     .product_var_one_text_center {
-        left: 5px;
+        left: 10px;
     }
 
-    /* Adjust styling for banner text one heading */
     .banner_text_one h1 {
-        font-size: 48px;
-        line-height: 56px;
+        font-size: 68px;
+        line-height: 76px;
     }
 
-    /* Adjust padding top for blog area one col-lg-4 blog one item */
     #blog_area_one .container .row .col-lg-4 .blog_one_item {
-        padding-top: 20px;
+        padding-top: 30px;
     }
 
-    /* Adjust padding top for blog area one col-lg-4:first-child blog one item */
     #blog_area_one .container .row .col-lg-4:first-child .blog_one_item {
-        padding-top: 0;
+        padding-top: 0px;
     }
 
-    /* Adjust padding top for slider arrows one owl nav */
     .slider_arrows_one .owl-nav {
         position: inherit;
-        padding-top: 10px;
+        padding-top: 20px;
         width: 100%;
         text-align: center;
         top: 0;
     }
 
-    /* Adjust styling for mobile menu logo */
     .mobile-menu-logo .logo {
-        width: 160px;
+        width: 200px;
         overflow: hidden;
     }
 
-    /* Center align copyright left */
     .copyright_left {
         text-align: center;
     }
 
-    /* Center align copyright right */
     #copyright_one .copyright_right {
         text-align: center;
     }
 
-    /* Adjust padding top and bottom for ptb-100 */
     .ptb-100 {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
-    /* Adjust padding top for pt-100 */
     .pt-100 {
-        padding-top: 40px;
+        padding-top: 60px;
     }
 
-    /* Adjust background position for special offer one */
     #special_offer_one {
-        background-position: 45%;
+        background-position: 40%;
         background-repeat: no-repeat;
-        padding: 40px 0;
+        padding: 60px 0;
     }
 
-    /* Adjust margin right for sizes input custom boxed */
     #sizes_input .custom_boxed {
-        margin-right: 6px;
+        margin-right: 8px;
     }
 
-    /* Adjust padding bottom for related product pb-100 */
     #related_product.pb-100 {
-        padding-bottom: 20px !important;
+        padding-bottom: 30px !important;
     }
 
-    /* Adjust padding bottom for pb-100 */
     .pb-100 {
-        padding-bottom: 40px;
+        padding-bottom: 60px;
     }
 
-    /* Adjust font size for center heading h2 */
     .center_heading h2 {
-        font-size: 24px;
+        font-size: 30px;
     }
 
-    /* Adjust padding top for center heading p */
     .center_heading p {
         padding-top: 5px;
     }
 
-    /* Adjust font size and line height for offer timer text h2 */
     .offer_timer_text h2 {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 30px;
+        line-height: 40px;
     }
 
-    /* Adjust background position for background bg */
     .background_bg {
         background-position: 65% 100%;
         background-size: cover;
     }
 }
 
-/* Styles for screens up to 600px */
 @media (max-width: 600px) {
-    /* Adjust styling for drodo responsive nav logo */
     .drodo-responsive-nav .logo {
         position: relative;
         width: 39%;
@@ -630,69 +693,122 @@
         top: 11px;
     }
 
-    /* Display countdown two ul as inline table */
     #countdown_two ul {
         display: inline-table;
     }
 
-    /* Adjust margin for countdown two li */
     #countdown_two li {
         margin-left: 0px;
         margin-top: 15px;
     }
 
-    /* Adjust styling for product filter padding bottom */
+ 
+
     .product_filter {
         padding-bottom: 0px;
     }
 
-    /* Display product shot */
     .product_shot {
         display: inherit;
     }
 
-    /* Adjust padding for customs selects */
     .customs_selects {
         padding: 15px 0;
     }
 
-    /* Adjust padding left for product shot view ul li first child */
     .product_shot_view ul li:first-child {
         padding-left: 0px;
     }
 
-    /* Adjust styling for mobile menu logo */
     .mobile-menu-logo .logo {
         width: 150px;
         overflow: hidden;
     }
 
-    /* Adjust margin right for header action link li */
     .header-action-link li {
         margin-right: 15px;
     }
 
-    /* Adjust padding for small buttons */
     .btn_sm {
         padding: 10px 12px;
     }
 }
 
-/* Styles for screens up to 361px */
 @media (max-width: 361px) {
-    /* Adjust styling for mobile menu logo */
     .mobile-menu-logo .logo {
         width: 100px;
         overflow: hidden;
     }
 
-    /* Adjust margin right for header action link li */
     .header-action-link li {
         margin-right: 10px;
     }
 
-    /* Adjust padding for small buttons */
     .btn_sm {
         padding: 10px 5px;
     }
 }
+
+
+@media (max-width: 600px) {
+    .drodo-responsive-nav .logo {
+      position: relative;
+      width: 39%;
+      z-index: 999;
+      top: 11px;
+    }
+
+    #countdown_two ul {
+      display: inline-table;
+    }
+
+    #countdown_two li {
+      margin-left: 0px;
+      margin-top: 15px;
+    }
+
+    .product_filter {
+      padding-bottom: 0px;
+    }
+
+    .product_shot {
+      display: inherit;
+    }
+
+    .customs_selects {
+      padding: 15px 0;
+    }
+
+    .product_shot_view ul li:first-child {
+      padding-left: 0px;
+    }
+
+    .mobile-menu-logo .logo {
+      width: 150px;
+      overflow: hidden;
+    }
+
+    .header-action-link li {
+      margin-right: 15px;
+    }
+
+    .btn_sm {
+      padding: 10px 12px;
+    }
+  }
+
+  @media (max-width: 361px) {
+    .mobile-menu-logo .logo {
+      width: 100px;
+      overflow: hidden;
+    }
+
+    .header-action-link li {
+      margin-right: 10px;
+    }
+
+
+    .btn_sm {
+      padding: 10px 5px;
+    }
+  }

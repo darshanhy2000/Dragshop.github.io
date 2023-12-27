@@ -1,29 +1,60 @@
-//   import React from 'react'
-// import { useHistory } from 'react-router-dom'
-// // import img
-// import img1 from '../../assets/img/invoice/invoice.svg'
-// import logo from '../../assets/img/logo.png'
-// import sign from '../../assets/img/invoice/sign.png'
+
+
+// import React from 'react';
+// import { useHistory } from 'react-router-dom';
+// import img1 from '../../assets/img/invoice/invoice.svg';
+// import logo from '../../assets/img/logo.png';
+// import sign from '../../assets/img/invoice/sign.png';
 // import jsPDF from 'jspdf';
 // import html2canvas from 'html2canvas';
 
-
 // const InvoiceOnes = () => {
 //   const history = useHistory();
+
 //   const routeChange = () => {
-//       history.goBack()
-//     };
-//     return (
-//         <>
+//     history.goBack();
+//   };
+
+//   const exportAsPDF = () => {
+//     const input = document.getElementById('invoice-container');
+//     html2canvas(input, { scale: 2 }).then((canvas) => {
+//       const imgData = canvas.toDataURL('image/png');
+//       const pdf = new jsPDF('p', 'mm', 'a4');
+//       const imgWidth = 210;
+//       const pageHeight = 297;
+//       const imgHeight = (canvas.height * imgWidth) / canvas.width;
+//       let heightLeft = imgHeight;
+//       let position = 0;
+
+//       pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+//       heightLeft -= pageHeight;
+
+//       while (heightLeft >= 0) {
+//         position = heightLeft - imgHeight;
+//         pdf.addPage();
+//         pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+//         heightLeft -= pageHeight;
+//       }
+
+//       pdf.save('invoice.pdf');
+//     });
+//   };
+
+//   return (
+//     <>
 //       <section className="theme-invoice-1 pb-100">
 //         <div className="container">
 //           <div className="row">
 //             <div className="col-xl-8 m-auto">
-//             <div className="back_btn_emial">
-//                             <button className="theme-btn-one btn-black-overlay btn_sm" onClick={routeChange}>
-//                                 <i className="fa fa-arrow-left mr-2"></i>Go Back
-//                             </button>
-//                         </div>
+//               <div className="back_btn_emial">
+//                 <button
+//                   className="theme-btn-one btn-black-overlay btn_sm"
+//                   onClick={routeChange}
+//                 >
+//                   <i className="fa fa-arrow-left mr-2"></i>Go Back
+//                 </button>
+//               </div>
+//               <div className="invoice-wrapper" id="invoice-container">
 //               <div className="invoice-wrapper">
 //                 <div className="invoice-header">
 //                   <div className="upper-icon">
@@ -114,37 +145,45 @@
 //                     </tfoot>
 //                   </table>
 //                 </div>
-//                 <div className="invoice-footer text-right">
-//                   <div className="authorise-sign">
-//                     <img src={sign} className="img-fluid" alt="sing" />
-//                     <span className="line"></span>
-//                     <h6>Authorised Sign</h6>
-//                   </div>
-//                   <div className="buttons">
-//                     <button className="theme-btn-one btn-black-overlay btn_sm">export as PDF</button>
-//                     <button className="theme-btn-one btn-black-overlay btn_sm ml-2">print</button>
-//                   </div>
+//               </div>
+//               <div className="invoice-footer text-right">
+//                 <div className="authorise-sign">
+//                   <img src={sign} className="img-fluid" alt="sing" />
+//                   <span className="line"></span>
+//                   <h6>Authorised Sign</h6>
+//                 </div>
+//                 <div className="buttons">
+//                   <button
+//                     className="theme-btn-one btn-black-overlay btn_sm"
+//                     onClick={exportAsPDF}
+//                   >
+//                     export as PDF
+//                   </button>
+//                   <button className="theme-btn-one btn-black-overlay btn_sm ml-2">
+//                     print
+//                   </button>
 //                 </div>
 //               </div>
 //             </div>
 //           </div>
 //         </div>
+//          </div>
 //       </section>
-//         </>
-//     )
-// }
+//     </>
+//   );
+// };
 
-// export default InvoiceOnes
+// export default InvoiceOnes;
 
 
 
+import * as html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import img1 from '../../assets/img/invoice/invoice.svg';
 import logo from '../../assets/img/logo.png';
 import sign from '../../assets/img/invoice/sign.png';
-import jsPDF from 'jspdf';
-import html2canvas from 'html2canvas';
 
 const InvoiceOnes = () => {
   const history = useHistory();
@@ -152,7 +191,6 @@ const InvoiceOnes = () => {
   const routeChange = () => {
     history.goBack();
   };
-
   const exportAsPDF = () => {
     const input = document.getElementById('invoice-container');
     html2canvas(input, { scale: 2 }).then((canvas) => {
@@ -305,7 +343,7 @@ const InvoiceOnes = () => {
             </div>
           </div>
         </div>
-        </div>
+         </div>
       </section>
     </>
   );
