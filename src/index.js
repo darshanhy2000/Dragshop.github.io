@@ -14,6 +14,9 @@ import "./assets/css/color.css"
 import "./assets/css/responsive.css"
 import "./assets/css/animate.min.css"
 
+
+
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
