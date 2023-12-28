@@ -152,6 +152,13 @@ ul li {
     padding-top: 0px;
     padding-bottom: 0px;
 }
+.wishlist-icon {
+    position: absolute;
+    top: 1px; /* Adjust the top position according to your design */
+    right: 10px; /* Adjust the right position according to your design */
+    color: #c9acac; /* Adjust the color of the heart icon */
+    font-size: 40px; /* Adjust the font size of the heart icon */
+}
 
 /* --Common Class Area start-- */
 

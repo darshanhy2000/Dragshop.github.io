@@ -15,6 +15,22 @@ import gplus from '../../assets/img/email/gplus.png'
 import linkedin from '../../assets/img/email/linkedin.png'
 import pinterest from '../../assets/img/email/pinterest.png'
 
+import {
+    FacebookShareButton,
+    TwitterShareButton,
+    LinkedinShareButton,
+    TelegramShareButton,
+    WhatsappShareButton,
+  } from 'react-share';
+  import {
+    FacebookIcon,
+    TwitterIcon,
+    LinkedinIcon,
+    TelegramIcon,
+    WhatsappIcon,
+  } from 'react-share';
+  
+
 const OrderSuccess = () => {
     const history = useHistory();
     const routeChange = () => {
@@ -88,7 +104,7 @@ const OrderSuccess = () => {
                                                 <img src={pro1} alt="img" width="70" />
                                             </td>
                                             <td valign="top" style={{ paddingLeft: "15px" }}>
-                                                <h5 style={{ marginTop: "15px" }}>Three seater Wood Style sofa for Leavingroom </h5>
+                                                <h5 style={{ marginTop: "15px" }}>Annaboda 2.0 HSP Sweater - Willow Green.</h5>
                                             </td>
                                             <td valign="top" style={{ paddingLeft: "15px" }}>
                                                 <h5 style={{ fontSize: "14px", color: "#444", marginTop: "15px", marginBottom: " 0px" }}>Size :
@@ -104,7 +120,7 @@ const OrderSuccess = () => {
                                                 <img src={pro2} alt="img" width="70" />
                                             </td>
                                             <td valign="top" style={{ paddingLeft: "15px" }}>
-                                                <h5 style={{ marginTop: "15px" }}>Three seater Wood Style for Badroom </h5>
+                                                <h5 style={{ marginTop: "15px" }}>Blue T-shirt men </h5>
                                             </td>
                                             <td valign="top" style={{ paddingLeft: "15px" }}>
                                                 <h5 style={{ fontSize: "14px", color: "#444", marginTop: "15px", marginBottom: "0px" }}>Size :
@@ -164,8 +180,8 @@ const OrderSuccess = () => {
                                                     DILIVERY ADDRESS</h5>
                                                 <p
                                                     style={{ textAlign: "left", fontWeight: "normal", fontSize: "14px", color: "#000000", lineHeight: "21px", marginTop: "0" }}>
-                                                    268 Cambridge Lane New Albany,<br /> IN 47150268 Cambridge Lane <br />New Albany, IN
-                                                    47150</p>
+                                                    268 Jp nagar, 3rd block,<br /> IN Bengalore <br />karnataka, IN
+                                                    560076</p>
                                             </td>
                                             <td width="57" height="25" className="user-info"><img
                                                 src={spoce} alt="img" height="25" width="57" /></td>
@@ -176,8 +192,8 @@ const OrderSuccess = () => {
                                                     SHIPPING ADDRESS</h5>
                                                 <p
                                                     style={{ textAlign: "left", fontWeight: "normal", fontSize: "14px", color: "#000000", lineHeight: "21px", marginTop: "0" }}>
-                                                    268 Cambridge Lane New Albany,<br /> IN 47150268 Cambridge Lane <br />New Albany, IN
-                                                    47150</p>
+                                                  268 Jp nagar, 3rd block,<br /> IN Bengalore <br />karnataka, IN
+                                                    560076</p>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -197,24 +213,23 @@ const OrderSuccess = () => {
                                 <table border="0" cellPadding="0" cellSpacing="0" className="footer-social-icon text-center" align="center"
                                     style={{ marginTop: "20px" }}>
                                     <tbody><tr>
-                                        <td>
-                                            <a href="#!"><img src={facebook} alt="img" /></a>
-                                        </td>
-                                        <td>
-                                            <a href="#!"><img src={youtube} alt="img" /></a>
-                                        </td>
-                                        <td>
-                                            <a href="#!"><img src={twitter} alt="img" /></a>
-                                        </td>
-                                        <td>
-                                            <a href="#!"><img src={gplus} alt="img" /></a>
-                                        </td>
-                                        <td>
-                                            <a href="#!"><img src={linkedin} alt="img" /></a>
-                                        </td>
-                                        <td>
-                                            <a href="#!"><img src={pinterest} alt="img" /></a>
-                                        </td>
+                                    <div className="posted_icons_one">
+                                    <FacebookShareButton url={'#1'} quote={'Best Plotform'}>
+                                        <FacebookIcon size={32} round />
+                                    </FacebookShareButton>
+                                    <TwitterShareButton url={'#2'} title={'Best Plotform'}>
+                                        <TwitterIcon size={32} round />
+                                    </TwitterShareButton>
+                                    <LinkedinShareButton url={'#3'} title={'Best Plotform'}>
+                                        <LinkedinIcon size={32} round />
+                                    </LinkedinShareButton>
+                                    <TelegramShareButton url={'#4'} title={'Best Plotform'}>
+                                        <TelegramIcon size={32} round />
+                                    </TelegramShareButton>
+                                    <WhatsappShareButton url={'#'} title={'Best Plotform'}>
+                                        <WhatsappIcon size={32} round />
+                                    </WhatsappShareButton>
+                                    </div>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -228,7 +243,7 @@ const OrderSuccess = () => {
                                         </tr>
                                         <tr>
                                             <td>
-                                                <p style={{ fontSize: "13px", margin: "0" }}>2021 Copy Right by Themeforest powerd by andit_themes</p>
+                                                <p style={{ fontSize: "13px", margin: "0" }}>2023 Copy Right by Themeforest powerd by andit_themes</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -248,3 +263,4 @@ const OrderSuccess = () => {
 }
 
 export default OrderSuccess
+

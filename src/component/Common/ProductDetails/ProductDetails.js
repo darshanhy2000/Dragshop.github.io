@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+ import React, { useState } from 'react';
 import ProductInfo from './ProductInfo'
 import RelatedProduct from './RelatedProduct'
 import { Link } from 'react-router-dom'
@@ -57,13 +57,15 @@ const decNum = () => {
         <>{
             product
             ?
-            <section id="product_single_onenvm --version
-            " className="ptb-100">
+            <section id="product_single_onenvm --version" className="ptb-100">
                 <div className="container">
                     <div className="row area_boxed">
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 position-relative">
                             <div className="product_single_one_img">
                                 <img src={img} alt="img" />
+                                <a href="#!" className="action wishlist-icon" title="Wishlist" onClick={() => addToFav(product.id)}>
+                                    <i className="fa fa-heart"></i>
+                                </a>
                             </div>
                         </div>
                         <div className="col-lg-8">
@@ -122,17 +124,9 @@ const decNum = () => {
                                              </div>
                                         </div>
                                     </form>
+                                    <br></br>
                                     <div className="links_Product_areas">
-                                        <ul>
-                                            <li>                                                 
-                                            <a href="#!" className="action wishlist" title="Wishlist" onClick={() => addToFav(product.id)}><i
-                                                    className="fa fa-heart"></i>Add To Wishlist</a>
-                                            </li>
-                                            {/* <li>
-                                                <a href="#!" className="action compare" onClick={() => addToComp(product.id)} title="Compare"><i
-                                                    className="fa fa-exchange"></i>Add To Compare</a>
-                                            </li> */}
-                                        </ul>
+
                                         <a href="#!" className="theme-btn-one btn-black-overlay btn_sm" onClick={() => addToCart(product.id)}>Add To Cart</a>
                                     </div>
 

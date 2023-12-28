@@ -44,84 +44,6 @@ const ReviewData = [
 
 ]
 
-// const ProductInfo = () => {
-//     return (
-//         <div className="container mt-5">
-//           <div className="row">
-//             <div className="col-lg-12">
-//               <div className="product-details-tabs">
-//                 <ul className="nav nav-tabs">
-//                   <li><a data-toggle="tab" href="#description" className="active">Description</a></li>
-//                   <li><a data-toggle="tab" href="#additional">Additional Information</a></li>
-//                   <li><a data-toggle="tab" href="#review">Review</a></li>
-//                 </ul>
-//                 <div className="tab-content">
-//                   <div id="description" className="tab-pane fade in show active">
-//                     <div className="product-description">
-//                       <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh.</p>
-//                       <ul>
-//                         <li>Vivamus magna justo, lacinia eget consectetur sed</li>
-//                         <li>Curabitur aliquet quam id dui posuere blandit</li>
-//                         <li>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar</li>
-//                       </ul>
-//                       <p>Donec sollicitudin molestie malesuada. Cras ultricies ligula sed magna dictum porta. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Curabitur arcu erat, accumsan id imperdiet et, Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
-//                     </div>
-//                   </div>
-//                   <div id="additional" className="tab-pane fade">
-//                     <div className="product-additional">
-//                       <ul>
-//                         <li>Weight: <span>400 g</span></li>
-//                         <li>Dimensions: <span>10 x 10 x 15 cm</span></li>
-//                         <li>Materials: <span>60% cotton, 40% polyester</span></li>
-//                         <li>Other Info: <span>American heirloom jean shorts pug seitan letterpress</span></li>
-//                       </ul>
-//                     </div>
-//                   </div>
-//                   <div id="review" className="tab-pane fade">
-//                                 <div className="product_reviews">
-//                                     <ul>
-//                                         {ReviewData.map((data, index) => (
-//                                             <li className="media" key={index}>
-//                                                 <div className="media-img">
-//                                                     <img src={data.img} alt="img" />
-//                                                 </div>
-//                                                 <div className="media-body">
-//                                                     <div className="media-header">
-//                                                         <div className="media-name">
-//                                                             <h4>{data.name}</h4>
-//                                                             <p>{data.date}</p>
-//                                                         </div>
-//                                                         <div className="post-share">
-//                                                             <a href="#!" className="replay">{data.replay}</a>
-//                                                             <a href="#!" className="">{data.report}</a>
-//                                                         </div>
-//                                                     </div>
-//                                                     <div className="media-pragraph">
-//                                                         <div className="product_review_strat">
-//                                                             <span><a href="#!"><i className="fa fa-star"></i></a></span>
-//                                                             <span><a href="#!"><i className="fa fa-star"></i></a></span>
-//                                                             <span><a href="#!"><i className="fa fa-star"></i></a></span>
-//                                                             <span><a href="#!"><i className="fa fa-star"></i></a></span>
-//                                                             <span><a href="#!"><i className="fa fa-star"></i></a></span>
-//                                                         </div>
-//                                                         <p>{data.para}</p>
-//                                                     </div>
-//                                                 </div>
-//                                             </li>
-//                                         ))}
-//                                     </ul>
-//                                 </div>
-//                             </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       );
-//     };
-    
-//     export default ProductInfo;
-
 
 const ProductInfo = () => {
     return (
@@ -137,27 +59,27 @@ const ProductInfo = () => {
                         <div className="tab-content">
                             <div id="description" className="tab-pane fade in show active">
                                 <div className="product_description">
-                                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac
-                                        diam sit amet quam vehicula elementum sed sit amet dui.
-                                        Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed,
-                                        convallis at tellus. Sed porttitor lectus nibh.
-                                        Donec sollicitudin molestie malesuada. Vivamus magna justo,
-                                        lacinia eget consectetur sed, convallis at tellus. Curabitur arcu erat, accumsan
-                                        id imperdiet et, porttitor at sem.</p>
-                                    <ul>
-                                        <li>Vivamus magna justo, lacinia eget consectetur sed</li>
-                                        <li>Curabitur aliquet quam id dui posuere blandit</li>
-                                        <li>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar </li>
-                                    </ul>
-                                    <p>Donec sollicitudin molestie malesuada. Cras ultricies ligula sed magna dictum
-                                        porta.
-                                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                                        Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum
-                                        porta. Curabitur arcu erat, accumsan id imperdiet et,
-                                        Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit.
-                                        porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                                    </p>
+                                <p>It was to be taken care of by the bow, the layer was financed and, at the same time, the airline. Manufacturing and
+                                         The yard is more important than the vehicle element, but it is important for God.
+                                         But the airline has chosen the price. Let's live just fine, Lacinia needs to be followed, but
+                                         valley and land But the airline has chosen the price.
+                                         Until the employee's concern was expected. Long live just
+                                         Lacinia needs to be followed, but the valley and the region. It was a classroom, a layer
+                                         it will finance and, at the same time, the airline.</p>
+                                     <ul>
+                                         <li>We live a great justice, but Lacinia needs to be followed</li>
+                                         <li>It will be taken care of the trucks that it pleases the god to put</li>
+                                         <li>Mauris flatters the driver, needs a pillow </li>
+                                     </ul>
+                                     <p>Until the concern of the employee is expected. To-morrow, a small but great thing was said
+                                         gate
+                                         Mauris flatters the elit, needs the tincidunt nibh pulvinar a.
+                                         There is no airline developer. To-morrow, a small but great thing was said
+                                         gate It was a classroom, a layer of funding and,
+                                         Children enter the very door of the clinic. I'm sorry for the pain,
+                                         enhanced monitoring procedures.
+                                         ferry at sea Everyone wants to except, the price to be in lacinia, for that element.
+                                     </p>
                                 </div>
                             </div>
                             <div id="additional" className="tab-pane fade">

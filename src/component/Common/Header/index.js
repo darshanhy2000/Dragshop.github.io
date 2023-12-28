@@ -104,7 +104,7 @@ const Header = () => {
     const isSticky = (e) => {
         const header = document.querySelector('.header-section');
         const scrollTop = window.scrollY;
-        scrollTop >= 250 ? header.classList.add('is-sticky') : header.classList.remove('is-sticky');
+        scrollTop >= 150 ? header.classList.add('is-sticky') : header.classList.remove('is-sticky');
     };
 
     return (
@@ -468,7 +468,9 @@ const Header = () => {
             </div>
 
             <div id="search" className="search-modal">
-                <button type="button" className="close" onClick={handleSearch}><img src={svg} alt="icon" /></button>
+                <button type="button" className="close" onClick={handleSearch}>
+                    <img src={svg} alt="icon" />
+                </button>
                 <form onSubmit={(e) => { e.preventDefault(); handleSearch(); Swal.fire('Success', 'Check out the Results', 'success'); history.push('/shop') }}>
                     <input type="search" placeholder="type keyword(s) here" required />
                     <button type="submit" className="btn btn-lg btn-main-search">Search</button>
