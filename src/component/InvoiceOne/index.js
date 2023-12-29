@@ -10,7 +10,7 @@ import sign from '../../assets/img/invoice/sign.png';
 
 const InvoiceOnes = () => {
   const history = useHistory();
-  const [isPdfExporting, setIsPdfExporting] = React.useState(false);
+  const [setIsPdfExporting] = React.useState(false);
 
   const routeChange = () => {
     history.goBack();

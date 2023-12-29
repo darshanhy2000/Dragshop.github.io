@@ -169,7 +169,11 @@ ul li {
 .container-xl {
     max-width: 1440px;
 }
-
+.payment-logo {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add margin between the image and text */
+}
 .img-zoom-hover img {
     /* transform-origin: 65% 75%; */
     transition: transform 1s, filter 0.5s ease-out;
@@ -183,6 +187,20 @@ ul li {
 .center_heading {
     padding-bottom: 30px;
     text-align: center;
+}
+
+.animated-message {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .center_heading h2 {

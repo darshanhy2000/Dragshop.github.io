@@ -8,12 +8,12 @@ import pro1 from '../../assets/img/email/pro-3.jpg'
 import pro2 from '../../assets/img/email/pro-5.jpg'
 import spoce from '../../assets/img/email/space.jpg'
 // Icon Import
-import facebook from '../../assets/img/email/facebook.png'
-import youtube from '../../assets/img/email/youtube.png'
-import twitter from '../../assets/img/email/twitter.png'
-import gplus from '../../assets/img/email/gplus.png'
-import linkedin from '../../assets/img/email/linkedin.png'
-import pinterest from '../../assets/img/email/pinterest.png'
+// import facebook from '../../assets/img/email/facebook.png'
+// import youtube from '../../assets/img/email/youtube.png'
+// import twitter from '../../assets/img/email/twitter.png'
+// import gplus from '../../assets/img/email/gplus.png'
+// import linkedin from '../../assets/img/email/linkedin.png'
+// import pinterest from '../../assets/img/email/pinterest.png'
 
 import {
     FacebookShareButton,
