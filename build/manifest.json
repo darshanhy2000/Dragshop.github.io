@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "short_name": "DragShop",
   "name": "React.js",
@@ -13,3 +14,20 @@
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
+=======
+{
+  "short_name": "DragShop",
+  "name": "React.js",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
+>>>>>>> 4e1c11602242846100b73333512e36937d3247b5

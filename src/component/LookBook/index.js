@@ -25,7 +25,7 @@ const LookBook = () => {
                         <div className="dot-showbox">
                             <img src={img7} className="img-fluid blur-up lazyload" alt="img" />
                             <div className="dot-info">
-                                <h5 className="title">Blazer</h5>
+                                <h5 className="title">T-Shirt</h5>
                                 <h5>200₹</h5>
                                 <h6>details</h6>
                             </div>
@@ -37,7 +37,7 @@ const LookBook = () => {
                         <div className="dot-showbox"><img src={img2}
                                 className="img-fluid blur-up lazyload " alt="img" />
                             <div className="dot-info">
-                                <h5 className="title">Jeans</h5>
+                                <h5 className="title">Formal-Shoe</h5>
                                 <h5>520₹</h5>
                                 <h6>details</h6>
                             </div>
@@ -49,7 +49,7 @@ const LookBook = () => {
                         <div className="dot-showbox"><img src={img3}
                                 className="img-fluid blur-up lazyload " alt="img" />
                             <div className="dot-info">
-                                <h5 className="title">Sun glass</h5>
+                                <h5 className="title">Formal-Shoe</h5>
                                 <h5>130₹</h5>
                                 <h6>details</h6>
                             </div>
@@ -68,7 +68,7 @@ const LookBook = () => {
                         <div className="dot-showbox"><img src={img5}
                                 className="img-fluid blur-up lazyload" alt="img" />
                             <div className="dot-info">
-                                <h5 className="title">Jacket</h5>
+                                <h5 className="title">Formal-Shoe</h5>
                                 <h5>100₹</h5>
                                 <h6>details</h6>
                             </div>
@@ -80,7 +80,7 @@ const LookBook = () => {
                         <div className="dot-showbox"><img src={img6}
                                 className="img-fluid blur-up lazyload " alt="img" />
                             <div className="dot-info">
-                                <h5 className="title">Inner</h5>
+                                <h5 className="title">Casual-Shoe</h5>
                                 <h5>400₹</h5>
                                 <h6>details</h6>
                             </div>
