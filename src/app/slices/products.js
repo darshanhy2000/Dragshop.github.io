@@ -31,7 +31,7 @@ const productsSlice = createSlice({
             if (item === undefined) {
                 // Get Product
                 let arr = state.products.find(item => item.id === parseInt(id))
-                arr.quantity = 1
+                arr.quantity = 5
                 state.carts.push(arr)
                 Swal.fire({
                     title: 'Success!',

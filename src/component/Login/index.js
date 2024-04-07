@@ -1,48 +1,52 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { useSelector, useDispatch } from "react-redux";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
 import Swal from 'sweetalert2';
-import { useHistory } from "react-router-dom"
+import axios from 'axios';
+import { useHistory } from 'react-router-dom';
 
-const LoginArea = () => {
+const Login = () => {
     let dispatch = useDispatch();
-    const history = useHistory()
+    const history = useHistory();
 
-    let status = useSelector((state) => state.user.status);
-    let user = useSelector((state) => state.user.user);
+    // let status = useSelector((state) => state.user.status);
+    // let user = useSelector((state) => state.user.user);
 
     // Login
-    const login = () => {
-        if(status){
+    const login = async (username, password) => {
+        try {
+            const response = await axios.post('/api/login', { username, password });
+            if (response.data.success) {
+                dispatch({ type: 'user/login', payload: response.data.user });
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Login Successful',
+                    text: 'Welcome ' + response.data.user.name,
+                });
+                history.push('/'); // Redirect to homepage after successful login
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Login Failed',
+                    text: response.data.message,
+                });
+            }
+        } catch (error) {
+            console.error('Error logging in:', error);
             Swal.fire({
-                icon: 'question',
-                title: 'Mr. '+user.name,
-                html:
-                    'You are already loged in <br />' +
-                    'You can go to <b>' +
-                    'Dashboard</b> ' +
-                    'or our <b>Shop</b> page',
-            }).then((result) => {
-                if(result.isConfirmed) {
-                  history.push('/#!')
-                } else {
-                  // not clicked
-                }
-              });
-        }else{
-            dispatch({ type: "user/login" })
-            let name = user.name || 'Customer'
-            console.log(typeof(user.name));
-            Swal.fire({
-                icon: 'success',
-                title: 'Login Sucessfull',
-                text: 'Welcome '+ name
-            })
-            history.push("/#!");
+                icon: 'error',
+                title: 'Login Failed',
+                text: 'An error occurred while logging in. Please try again later.',
+            });
         }
-        
+    };
 
-    }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const username = e.target.elements.username.value;
+        const password = e.target.elements.password.value;
+        login(username, password);
+    };
 
     return (
         <>
@@ -52,21 +56,21 @@ const LoginArea = () => {
                         <div className="col-lg-6 offset-lg-3 col-md-12 col-sm-12 col-12">
                             <div className="account_form">
                                 <h3>Login</h3>
-                                <form onSubmit={(e)=>{e.preventDefault();login()}}>
+                                <form onSubmit={handleSubmit}>
                                     <div className="default-form-box">
                                         <label>Username or email<span className="text-danger">*</span></label>
-                                        <input type="text" className="form-control" required defaultValue=""/>
+                                        <input type="text" name="username" className="form-control" required defaultValue="" />
                                     </div>
                                     <div className="default-form-box">
                                         <label>Passwords<span className="text-danger">*</span></label>
-                                        <input type="password" className="form-control" required defaultValue="" minLength="8"/>
+                                        <input type="password" name="password" className="form-control" required defaultValue="" minLength="8" />
                                     </div>
                                     <div className="login_submit">
                                         <button className="theme-btn-one btn-black-overlay btn_md" type="submit">login</button>
                                     </div>
                                     <div className="remember_area">
                                         <div className="form-check">
-                                            <input type="checkbox" className="form-check-input" id="materialUnchecked"/>
+                                            <input type="checkbox" className="form-check-input" id="materialUnchecked" />
                                             <label className="form-check-label" htmlFor="materialUnchecked">Remember me</label>
                                         </div>
                                     </div>
@@ -78,7 +82,7 @@ const LoginArea = () => {
                 </div>
             </section>
         </>
-    )
-}
+    );
+};
 
-export default LoginArea
+export default Login;

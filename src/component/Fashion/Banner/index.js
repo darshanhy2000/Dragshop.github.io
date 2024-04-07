@@ -1,5 +1,5 @@
 import React from 'react'
-import BanImg from '../../../assets/img/common/man.png'
+// import BanImg from '../../../assets/img/common/man.png'
 import { Link } from 'react-router-dom'
 
 const Banner = () => {
@@ -21,7 +21,7 @@ const Banner = () => {
                 </div>
                 <div className="col-lg-6">
                     <div className="hero_img" >
-                        <img src={BanImg} alt="img" />
+                        {/* <img src={BanImg} alt="img" /> */}
                     </div>
                 </div>
             </div>

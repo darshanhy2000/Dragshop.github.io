@@ -12,6 +12,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "axios": "^1.6.8",
     "bootstrap": "^5.1.1",
     "chart.js": "^3.5.1",
     "chokidar": "^3.5.3",
@@ -22,6 +23,7 @@
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
     "lodash": "^4.17.21",
+    "mongodb": "^6.5.0",
     "p-min-delay": "^4.0.1",
     "rating-star": "^1.1.0",
     "react": "^18.2.0",
@@ -30,7 +32,6 @@
     "react-compound-timer": "^2.0.5",
     "react-countdown-clock-timer": "^2.1.2",
     "react-dom": "^18.2.0",
-    
     "react-icons": "^4.2.0",
     "react-messenger-customer-chat": "^0.8.0",
     "react-redux": "^7.2.5",
@@ -45,13 +46,10 @@
     "webpack": "4.42.0",
     "webpack-manifest-plugin": "2.2.0"
   },
-
   "engines": {
-    "node": "14.x",
-    "npm": "6.x"
+    "node": "18.x",
+    "npm": "10.x"
   },
-
-  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -80,9 +78,7 @@
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
+    "eslint-plugin-testing-library": "^6.2.0",
     "webpack-manifest-plugin": "^5.0.0"
   }
-
-
-  
 }

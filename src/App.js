@@ -4,8 +4,8 @@ import loadable from './component/Common/loader/loadable';
 import Loading from './component/Common/loader';
 import pMinDelay from 'p-min-delay';
 
+
 // All Page Lazy Import
-// const Grocery = loadable(() => pMinDelay(import('./page/grocery'), 250), { fallback: <Loading /> });
 const Login = loadable(() => pMinDelay(import('./page/login'), 250), { fallback: <Loading /> });
 const ShopGrid = loadable(() => pMinDelay(import('./page/shop'), 250), { fallback: <Loading /> });
 const ShopTwo = loadable(() => pMinDelay(import('./page/shop/shop-two'), 250), { fallback: <Loading /> });
@@ -23,9 +23,6 @@ const About = loadable(() => pMinDelay(import('./page/about'), 250), { fallback:
 const OrderComplete = loadable(() => pMinDelay(import('./page/order/order-complete'), 250), { fallback: <Loading /> });
 const OrderTracking = loadable(() => pMinDelay(import('./page/order/order-tracking'), 250), { fallback: <Loading /> });
 const OrderSuccesses = loadable(() => pMinDelay(import('./page/order/order-success'), 250), { fallback: <Loading /> });
-// const EmailTemplateOnes = loadable(() => pMinDelay(import('./page/email/index'), 250), { fallback: <Loading /> });
-// const EmailTemplateTwos = loadable(() => pMinDelay(import('./page/email/email-template-two'), 250), { fallback: <Loading /> });
-// const EmailTemplateThrees = loadable(() => pMinDelay(import('./page/email/email-template-three'), 250), { fallback: <Loading /> });
 const InvoiceOne = loadable(() => pMinDelay(import('./page/invoice/index'), 250), { fallback: <Loading /> });
 const LookBooks = loadable(() => pMinDelay(import('./page/shop/look-book'), 250), { fallback: <Loading /> });
 const BlogGridThrees = loadable(() => pMinDelay(import('./page/blog/blog-grid-two'), 250), { fallback: <Loading /> });
@@ -63,7 +60,6 @@ const App = () => {
           <ScrollToTop />
           <Switch>
             <Route path='/' exact component={Fashion} /> */
-            {/* <Route path='/grocery' exact component={Grocery} /> */}
             <Route path='/cart' exact component={Cart} />
             <Route path='/checkout-two' exact component={CheckoutTwos} />
             <Route path='/about' exact component={About} />
@@ -81,6 +77,7 @@ const App = () => {
             <Route path='/register' exact component={Register} />
             <Route path='/privacy-policy' exact component={PrivacyPolicy} />
             <Route path='/faqs' exact component={Faqs} />
+            
             <Route path='/coming-soon' exact component={ComingSoon} />
             <Route path='/contact-one' exact component={ContactOne} />
             <Route path='/shop' exact component={ShopGrid} />
