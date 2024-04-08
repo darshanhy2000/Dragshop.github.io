@@ -48,7 +48,7 @@
   },
   "engines": {
     "node": "18.x",
-    "npm": "10.x"
+    "npm": "18.x"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -76,7 +76,6 @@
     ]
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-plugin-testing-library": "^6.2.0",
     "webpack-manifest-plugin": "^5.0.0"
