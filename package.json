@@ -47,9 +47,9 @@
     "webpack-manifest-plugin": "2.2.0"
   },
   "engines": {
-    "node": "18.x",
-    "npm": "18.x"
-  },
+    "node": "^18.0.0",
+    "npm": "^7.0.0"
+},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

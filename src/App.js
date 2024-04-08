@@ -77,7 +77,7 @@ const App = () => {
             <Route path='/register' exact component={Register} />
             <Route path='/privacy-policy' exact component={PrivacyPolicy} />
             <Route path='/faqs' exact component={Faqs} />
-            
+
             <Route path='/coming-soon' exact component={ComingSoon} />
             <Route path='/contact-one' exact component={ContactOne} />
             <Route path='/shop' exact component={ShopGrid} />
